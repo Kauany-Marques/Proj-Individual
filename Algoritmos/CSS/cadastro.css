@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins';
+    font-family: 'Bodoni Moda';
     margin: 0px;
 
 }
@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../Imagens/image_1.jpg')
+    background-image: url('../Imagens/fundo4.jpg');
 }
 
 .bloco_foto {
@@ -20,9 +20,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.cadastro{
+    color: wheat;
+}
+.jae{
+color: #ffcbd7;
+}
 .bloco_cadastro {
-    background-color: rgba(255, 0, 230, 0.5);
+    background-color: #51423dbe;
     width: 25%;
     height: 70%;
     display: flex;
@@ -31,11 +36,40 @@ body {
     flex-direction: column;
     border-radius: 20px;
 }
-
 .botao{
-    background-color: aliceblue;
+    background-color: wheat;
+    color: black;
     border: none;
     border-radius: 10px;
     height: 25px;
     width: 60%;
+}
+.botaoCadastro{
+    height: 25px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: wheat;
+    cursor: pointer;
+}
+.botaoCadastro:hover {
+    background-color: rgb(37, 37, 47);
+    color: white;
+    transform: scale(1.1); 
+    transition: 0.3s ease; 
+  }
+a{
+    color: #ffcbd7;
+}
+.mensagemEmail{
+    font-size: 13px;
+    justify-content: flex-start;
+    color: red;
+}
+.mensagemSenha {
+font-size: 13px;
+color: red;
+}
+.mensagemRedigite{
+    color: red;
+    font-size: 13px;
 }

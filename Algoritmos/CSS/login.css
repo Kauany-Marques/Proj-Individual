@@ -10,7 +10,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../Imagens/image_1.jpg')
+    background-image: url('../Imagens/fundo19.jpg');
 }
 
 .bloco_foto{
@@ -20,9 +20,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+.login{
+    color: wheat;
+}
 
 .bloco_login{
-    background-color: rgba(242, 0, 255, 0.5);
+    background-color: rgba(23, 22, 20, 0.722);
     width: 25%;
     height: 70%;
     display: flex;
@@ -33,9 +36,15 @@ body{
 }
 
 .botao{
-    background-color: aliceblue;
+    background-color: wheat;
     border: none;
     border-radius: 10px;
     height: 25px;
     width: 60%;
+}
+.h4{
+    color: wheat;
+}
+a{
+    color: wheat;
 }
