@@ -1,2 +1,2 @@
 # Proj-Individual
-Projeto Individual
+Projeto Individual sobre ballet.
