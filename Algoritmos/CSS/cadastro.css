@@ -1,5 +1,5 @@
 body {
-    font-family: 'Bodoni Moda';
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
 
 }
@@ -11,6 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../Imagens/fundo4.jpg');
+   
 }
 
 .bloco_foto {
@@ -22,6 +23,7 @@ body {
 }
 .cadastro{
     color: wheat;
+    margin-bottom: 0;
 }
 .jae{
 color: #ffcbd7;
@@ -57,6 +59,7 @@ color: #ffcbd7;
     transform: scale(1.1); 
     transition: 0.3s ease; 
   }
+
 a{
     color: #ffcbd7;
 }
