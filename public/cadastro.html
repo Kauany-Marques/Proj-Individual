@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bodoni Moda' rel='stylesheet'>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bloco_foto">
+            <div class="bloco_cadastro">
+                <h1 class="cadastro">Cadastro</h1>
+                <input id="input_nome" class="botao" placeholder="Nome" type="text">
+                <input id="input_emailCadastro" class="botao" placeholder="E-mail" type="text">
+                <div class="mensagemEmail" id="div_email"></div>
+                <input id="input_senhaCadastro" class="botao" placeholder="Senha" type="password">
+                <div class="mensagemSenha" id="div_senha"></div>
+                <input id="input_redigite" class="botao" placeholder="Redigite a senha" type="password">
+                <div class="mensagemRedigite" id="div_redigite"></div>
+                <button class="botaoCadastro" onclick="Cadastro()">Cadastro</button>
+                <h4 class="jae">Já é cadastrado? Clique abaixo para fazer login</h4>
+                <a href="login.html">Login</a>
+                <div id="div_mensagem" class="divMensagem"></div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
+<script>function Cadastro(){
+var email = input_emailCadastro.value;
+var senha = input_senhaCadastro.value;
+var redigite = input_redigite.value;
+var nome = input_nome.value;
+div_mensagem.innerHTML = "";
+div_email.innerHTML = "";
+div_senha.innerHTML = "";
+div_redigite.innerHTML = "";
+// Validações
+ 
+//Sem preenchimento
+if(nome == "" || email == "" || senha == "" || redigite == ""){
+div_mensagem.innerHTML = ` <span style="color: red;">* Preencha todos os campos para prosseguir  </span>`
+}
+
+// E-mail
+else{ 
+if(email.includes('@') && email.includes('.')){
+    div_email.innerHTML = `<span style="color: wheat;"> Email válido  </span>`}
+else{
+    div_email.innerHTML = "* E-mail inválido. Precisa de '@' e '.' "
+}
+if(senha.length > 6 && (senha.includes('@') || senha.includes('#') || senha.includes('$') || senha.includes('%') || senha.includes('&') || senha.includes('*') )){
+div_senha.innerHTML = `<span style="color: wheat;">Senha válida </span>`}
+else{
+    div_senha.innerHTML = `* Senha deve ter caracteres especiais e mais de 6 caracteres`
+}
+
+if(redigite != senha){
+div_redigite.innerHTML = `Senhas devem ser iguais`
+}
+else{
+    div_redigite.innerHTML = `<span style="color: wheat;"> Senha válida </span>`
+}
+}
+
+
+}
+
+
+
+</script>
