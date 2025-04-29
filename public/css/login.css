@@ -37,7 +37,7 @@ body {
 }
 
 .bloco_login {
-  background-color: rgba(23, 22, 20, 0.722);
+  background-color: rgba(7, 6, 3, 0.722);
   width: 25%;
   height: 70%;
   display: flex;
@@ -47,26 +47,41 @@ body {
   flex-direction: column;
   border-radius: 20px;
 }
-
+#input_name{
+  cursor: pointer;
+}
 .input {
   background-color: wheat;
   border: none;
   border-radius: 10px;
   height: 25px;
   width: 60%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
 }
 
 .input::placeholder {
-  padding-left: 15px;
+  padding-left: 10px;
+  
 }
 
 .botao {
-  background-color: wheat;
+  background-color: black;
+  color: wheat;
   border: none;
   border-radius: 10px;
   height: 25px;
   width: 60%;
+  cursor: pointer;
+  transition: background-color 0.7s, color 0.7s;
 }
+.botao:active {
+  background-color: wheat; 
+  color: black;
+  transform: scale(0.95);
+}
+
 h4 {
   color: wheat;
 }

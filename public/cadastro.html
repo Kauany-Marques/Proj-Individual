@@ -12,19 +12,23 @@
 
 <body>
     <div class="container">
+        <video width="100%" height="100%" autoplay muted loop playsinline>
+            <source src="assets/videos/ballet02.mp4" type="video/webm" />
+        </video>
         <div class="bloco_foto">
             <div class="bloco_cadastro">
                 <h1 class="cadastro">Cadastro</h1>
-                <input id="input_nome" class="botao" placeholder="Nome" type="text">
-                <input id="input_emailCadastro" class="botao" placeholder="E-mail" type="text">
+                <input id="input_nome" class="inputs" placeholder="Nome" type="text">
+                <div id="div_espaco"></div>
+                <input id="input_emailCadastro" class="inputs" placeholder="E-mail" type="text">
                 <div class="mensagemEmail" id="div_email"></div>
-                <input id="input_senhaCadastro" class="botao" placeholder="Senha" type="password">
+                <input id="input_senhaCadastro" class="inputs" placeholder="Senha" type="password">
                 <div class="mensagemSenha" id="div_senha"></div>
-                <input id="input_redigite" class="botao" placeholder="Redigite a senha" type="password">
+                <input id="input_redigite" class="inputs" placeholder="Redigite a senha" type="password">
                 <div class="mensagemRedigite" id="div_redigite"></div>
                 <button class="botaoCadastro" onclick="Cadastro()">Cadastro</button>
-                <h4 class="jae">Já é cadastrado? Clique abaixo para fazer login</h4>
-                <a href="login.html">Login</a>
+                <h4 class="jae">Já é cadastrado? Clique <a href="login.html">aqui</a> para fazer login</h4>
+                
                 <div id="div_mensagem" class="divMensagem"></div>
             </div>
         </div>

@@ -1,18 +1,27 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0px;
-
-}
-
-.container{
-    width: 100vw; 
+    padding: 0px;
+  }
+  
+  .container {
+    width: 100%;
     height: 100vh;
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../assets/fundo4.jpg');
-   
-}
+    background-repeat: no-repeat; */
+    /* background-image: url("../assets/images/cisneLogo.png"); */
+  }
+  .container video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
 
 .bloco_foto {
     width: 100%;
@@ -24,6 +33,9 @@ body {
 .cadastro{
     color: wheat;
     margin-bottom: 0;
+}
+h1 {
+    margin-top: 0;
 }
 .jae{
 color: #ffcbd7;
@@ -63,12 +75,24 @@ text-align: center;
     cursor: pointer;
 }
 .botaoCadastro:active {
-    background-color: rgb(37, 37, 47);
-    color: white;
+    background-color:wheat;
+    color: black;
     transform: scale(1.1); 
     transition: 0.3s ease; 
   }
-
+.inputs{
+      background-color: wheat;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 60%;
+    cursor: pointer;
+}
+.inputs::placeholder{
+    padding-left: 8px;
+    color: gray;
+}
 a{
     color: #ffcbd7;
 }
