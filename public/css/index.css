@@ -38,7 +38,7 @@ body {
 .container {
     display: flex;
     justify-content: flex-start;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     align-items: center;
     min-height: 110vh;
     background: black;
@@ -52,8 +52,8 @@ body {
 }
 
 .nav {
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    /* top: 0; */
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -187,31 +187,69 @@ h1{
 }
 
 
-.pagdois {
+.pag3 {
     position: relative;
     min-height: 100vh; 
     z-index: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 .teatro{
     filter: brightness(0.5)
 }
-.pagdois::before{
-    position: fixed;
+.pag3::before{
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     content: "";
-    opacity: .05;
-    z-index: 1000;
+    opacity: 0.05;
+    z-index: 0;
     pointer-events: none;
     background: url(../assets/videos/garinEffect.gif);
 }
 
+.pagdois{
+    font-family: 'Poppins';
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    background-color: rgb(251, 251, 251);
+    min-height: 100vh;
+    background-color:#8B4513;
+   
+}
+.pagdois h2{
+    color: black;
+}
+.linhatempo{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.containerum{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color:#5C2E0F;
+    border-radius: 4px;
+}
+.caixatxt{
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.esquerda{
+   left: 0; 
+}
+.direita{
+    left: 50%;
+}
 /* .paginaUm {
     display: flex;
     align-items: center;
