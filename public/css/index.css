@@ -16,6 +16,8 @@
 html,body {
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: black;
 }
 
 body {
@@ -250,6 +252,67 @@ h1{
 .direita{
     left: 50%;
 }
+.pag4{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    background-color: rgb(251, 251, 251);
+    min-height: 100vh;
+    background-color:#ffffff;
+}
+.cont{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+    color: rgb(0, 0, 0);
+}
+.card{
+    display: grid;
+    row-gap: 3.5rem;
+}
+.article_card{
+    position: relative;
+    overflow: hidden;
+}
+.cardum{
+    width: 328px;
+    border-radius: 1.3rem;
+}
+ .dados{
+ width: 280px;
+ background-color: var(--cont-color);
+ padding: 1.5rem 2rem;
+ box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+border-radius: 1rem;
+bottom: -9rem;
+left: 0;
+right: 0;
+margin-inline: auto;
+/* opacity: 0; */
+transition: opacity 1s 1s;
+} 
+.descricaoCard{
+    display: block;
+    font-size: var(--small-font-size, 1.5rem);
+    margin-bottom:  .25rem; 
+}
+.tituloCard{
+    font-size:var(--h2-font-size);
+    font-weight: 500;
+     color: var(--titulo-color);
+    margin-bottom:  .75rem; */
+}
+.botaoCard{
+    text-decoration: none;
+    font-size: var(--small-font-size, 1.5rem);
+    font-weight: 500;
+    color: var(--first-color);
+}
+.botaoCard:hover{
+    text-decoration: underline;
+
+} */
 /* .paginaUm {
     display: flex;
     align-items: center;
