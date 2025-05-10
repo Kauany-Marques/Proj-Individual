@@ -222,9 +222,8 @@ video{
     display: flex;
     width: 100vw;
     flex-direction: row;
-    background-color: rgb(251, 251, 251);
+    background-color: rgba(151, 69, 69, 0.723);
     min-height: 100vh;
-    background-color:#8B4513;
    
 }
 .pagdois h2{
@@ -239,7 +238,7 @@ video{
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    background-color:#5C2E0F;
+    background-color:wheat;
     border-radius: 4px;
 }
 .caixatxt{
@@ -304,7 +303,7 @@ transition: opacity 1s 1s;
     font-size:var(--h2-font-size);
     font-weight: 500;
      color: var(--titulo-color);
-    margin-bottom:  .75rem; */
+    margin-bottom:  .75rem; 
 }
 .botaoCard{
     text-decoration: none;
@@ -318,6 +317,10 @@ transition: opacity 1s 1s;
 } 
 .animacaoTitulo{
     margin-left: 12px;
+}
+.contador{
+    display: flex;
+    
 }
 /* .paginaUm {
     display: flex;
