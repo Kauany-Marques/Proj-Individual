@@ -39,21 +39,36 @@
        
         <div class="container_contador">
             <div class="contador">
-               <h5>CONTADOR</h5> <br>
-                <h1 id="contador">0</h1><br>
-                <button onclick="mais()" class="botao">+</button><br>
-                <button onclick="menos()" class="botao">-</button><br>
-                <button onclick="zerar()" class="botao">Zerar</button>
+               <h2>Já sabia <span id="contadorSabia">0</span></h2> 
+              
+                <h2>Não Sabia <span id="contadorNaoSabia">0</span></h2>
             </div>
         </div>
-   
 
         </div>
+
+        </div>
+
         <div class="bloco blocoB">
-   
+            <!-- <div class="curiosidade1">
+                <label>
+                    <input type="radio" name="curi1" value="sabia"> Já sabia
+                </label>
+                <label>
+                    <input type="radio" name="curi1" value="naoSabia"> Não sabia
+                </label> -->
+
+            </div>
+
+        <div class="bloco blocoC">
+                <!-- <label>
+                    <input type="radio" name="curi1" value="sabia"> Já sabia
+                </label>
+                <label>
+                    <input type="radio" name="curi1" value="naoSabia"> Não sabia
+                </label> -->
         </div>
-        <div class="bloco blocoC"></div>
-        </div>
+     
         <div class="blocao_2">
         <div class="bloco blocoA2"></div>
         <div class="bloco blocoB2"></div>
@@ -71,36 +86,19 @@
 
 </html>
 <script>
+var jaSabia = 0;
+var naoSabia = 0;
 
-
-
-    var valor = 0;
-    function mais() {
-        valor++;
-        atualizar();
-    }
-    function menos() {
-        valor--;
-        atualizar();
-    }
-    function zerar() {
-        valor = 0;
-        atualizar()
-    }
-    function atualizar() {
-        document.getElementById("contador").innerHTML = valor;
-    }
-    // inner text ou innerhtml
-
-
-    //     let contador = document.getElementById("contador")
-
-    // function incrementar(){
-    //     contador.
-    // }
-
-
-
-
+document.querySelectorAll('input[name="curi1"]').forEach(input => {
+input.addEventListener('change', (event) => {
+ if(event.target.value == "jaSabia"){
+    jaSabia++
+document.getElementById("contadorSabia").textContent = jaSabia;
+} else if(event.target.value == "naoSabia"){
+  naoSabia++;
+  document.getElementById("contadorNaoSabia").textContent = naoSabia;
+        }
+    });
+});
 
 </script>

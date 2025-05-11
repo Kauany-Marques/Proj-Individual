@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Curiosidades</title>
+    <link rel="stylesheet" href="../css/curiosidade.css">
+    <style>
+        .contador {
+            margin-bottom: 20px;
+        }
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        .contador-value {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Curiosidades</h1>
+
+        <div class="contador">
+            <h2>Contador de "Sim": <span class="sim-value">0</span></h2>
+            <h2>Contador de "Não": <span class="nao-value">0</span></h2>
+        </div>
+
+        <!-- Curiosidade 1 -->
+        <div class="curiosidade">
+            <p>Curiosidade 1: Você sabia que as abelhas podem reconhecer rostos humanos?</p>
+            <div class="radio-group">
+                <input type="radio" name="curiosidade1" value="sim"> Sim
+                <input type="radio" name="curiosidade1" value="nao"> Não
+            </div>
+        </div>
+
+        <!-- Curiosidade 2 -->
+        <div class="curiosidade">
+            <p>Curiosidade 2: Os flamingos podem ficar de cabeça para baixo por um longo tempo.</p>
+            <div class="radio-group">
+                <input type="radio" name="curiosidade2" value="sim"> Sim
+                <input type="radio" name="curiosidade2" value="nao"> Não
+            </div>
+        </div>
+
+        <!-- Curiosidade 3 -->
+        <div class="curiosidade">
+            <p>Curiosidade 3: O Sol é 400 vezes maior que a Lua, mas parece do mesmo tamanho no céu.</p>
+            <div class="radio-group">
+                <input type="radio" name="curiosidade3" value="sim"> Sim
+                <input type="radio" name="curiosidade3" value="nao"> Não
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let contadorSim = 0; // Contador de "Sim"
+        let contadorNao = 0; // Contador de "Não"
+
+        // Função para atualizar os contadores
+        function atualizarContadores() {
+            document.querySelector('.sim-value').textContent = contadorSim;
+            document.querySelector('.nao-value').textContent = contadorNao;
+        }
+
+        // Adicionando eventos aos inputs radio para cada curiosidade
+        document.querySelectorAll('.radio-group input').forEach(input => {
+            input.addEventListener('change', (event) => {
+                if (event.target.value === 'sim') {
+                    contadorSim++; // Aumenta o contador de "Sim"
+                } else if (event.target.value === 'nao') {
+                    contadorNao++; // Aumenta o contador de "Não"
+                }
+
+                // Atualiza os contadores a cada mudança de resposta
+                atualizarContadores();
+            });
+        });
+    </script>
+</body>
+</html>
