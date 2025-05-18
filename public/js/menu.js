@@ -18,3 +18,11 @@ function selecionarLink(){
 for(var i = 0; i < menu.length; i++){
     menu[i].addEventListener('click', selecionarLink);
 }
+
+// expandir
+var botaoExp = document.querySelector('#btn-exp')
+var menuSide = document.querySelector('.menuLateral')
+
+botaoExp.addEventListener('click', function(){
+    menuSide.classList.toggle('expandir')
+})
