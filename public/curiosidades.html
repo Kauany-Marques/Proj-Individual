@@ -4,149 +4,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curiosidades</title>
     <link rel="stylesheet" href="../public/style/curiosidade.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 
 <body>
-    <nav class="nav">
-        <div class="navLogo">
-            <img class="imagem" src="../web-data-viz/public/assets/images/cisneLogo.png" alt="">
-            <p><span style="color: black;"> BALLET . </span> </p>
-        </div>
-        <div class="navMenu">
-            <ul>
-                <li><a href="../html/index.html" class="link">HOME</a></li>
-                <li><a href="../html/index.html#pagdois" class="link">LINHA DO TEMPO</a></li>
-                <li><a href="#" class="link">BLABLABLA</a></li>
-                <li><a href="../html/curiosidades.html" class="link ativo">CURIOSIDADES</a></li>
-                <li><a href="#paginaquatro" class="link">JOGOS</a></li>
-            </ul>
-        </div>
-        <div class="botaoNav">
-            <button class="botao log" id="botaoLogin" onclick="window.location.href='login.html';">Login</button>
-            <button class="botao" id="botaoCadastro"
-                onclick="window.location.href='cadastro.html';">Cadastre-se</button>
-        </div>
-        </nav>
 
 
-        <div class="blocao">
+    <div class="blocao">
         <div class="bloco blocoA">
-        <p>Bem-vindo às curiosidades. Aqui, encontrará informações que poucos conhecem. Registre seu conhecimento nos campos "Já sabia" e "Não sabia", para incrementar ou decrementar o contador.</p>
+            <p>Bem-vindo às curiosidades. Aqui, encontrará informações que poucos conhecem. Registre seu conhecimento
+                nos campos "Já sabia" e "Não sabia", para incrementar ou decrementar o contador.</p>
 
-       
-        <div class="container_contador">
-            <div class="contador">
-               <h2>Já sabia <span id="contadorSabia">0</span></h2> 
-              
-                <h2>Não Sabia <span id="contadorNaoSabia">0</span></h2>
+
+            <div class="container_contador">
+                <div class="contador">
+                    <h2>Já sabia <span id="contadorSabia">0</span></h2>
+
+                    <h2>Não Sabia <span id="contadorNaoSabia">0</span></h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bloco blocoB">
+        <!-- <div class="b1"></div>
+        <div class="b2"></div> -->
+        <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/vandeime.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 1</h1>
+                <h4><strong>Van Damme</strong> já fez ballet</h4>
+                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
+                    qualquer coisa”.
+                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
             </div>
         </div>
+        </div>
+           <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo10.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 2</h1>
+                <h4><strong>Sapatilhas de ponta</strong> já fez ballet</h4>
+                <p>As famosas sapatilhas de ponta só são introduzidas no aprendizado depois de aproximadamente 4 anos de prática, na
+                     faixa dos 11 anos de idade. A bailarina se equilibra numa área de 2,5cm².</p>
 
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
+        </div>
+           <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo11.jpg" alt="">
+            </div>
+
+            <div class="dir">
+                <h1>Curiosidade 3</h1>
+                <h4><strong>Primeira bailarina negra</strong> já fez ballet</h4>
+                <p>A primeira bailarina negra a ocupar o cargo de “primeira bailarina” no American Ballet Theater foi Misty Copeland, em 2015.</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
         </div>
 
+           <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo12.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 4</h1>
+                <h4><strong>Capacidade pulmonar</strong> já fez ballet</h4>
+                <p>Os movimentos rítmicos e acrobáticos do balé ajudam a fortalecer os músculos do corpo, especialmente os membros
+                     inferiores, que são os mais utilizados durante a dança. Isso faz com que o coração tenha que bombear
+                      mais sangue para fornecer oxigênio e nutrientes para esses músculos, o que melhora a circulação sanguínea
+                       e aumenta a capacidade cardiopulmonar</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
         </div>
 
-        <div class="bloco blocoB">
-            <!-- <div class="curiosidade1">
-                <label>
+
+         <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo13.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 5</h1>
+                <h4><strong>Van Damme</strong> já fez ballet</h4>
+                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
+                    qualquer coisa”.
+                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
+        </div>
+          <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo14.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 6</h1>
+                <h4><strong>Van Damme</strong> já fez ballet</h4>
+                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
+                    qualquer coisa”.
+                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+              <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo15.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 7</h1>
+                <h4><strong>Van Damme</strong> já fez ballet</h4>
+                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
+                    qualquer coisa”.
+                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
+        </div>
+          <div class="container-cartao">
+        <div class="cartao">
+            <div class="esq">
+                <img src="../public/assets/images/fundo16.jpg" alt="">
+            </div>
+            <div class="dir">
+                <h1>Curiosidade 8</h1>
+                <h4><strong>Van Damme</strong> já fez ballet</h4>
+                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
+                    qualquer coisa”.
+                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                      <div class="botoes">
+                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+            </div>
+            </div>
+        </div>
+        </div>
+           
+ <!-- <div class="bloco blocoC">
+        <label>
                     <input type="radio" name="curi1" value="sabia"> Já sabia
                 </label>
                 <label>
                     <input type="radio" name="curi1" value="naoSabia"> Não sabia
-                </label> -->
-
-            </div>
-
-        <div class="bloco blocoC">
-                <!-- <label>
-                    <input type="radio" name="curi1" value="sabia"> Já sabia
                 </label>
-                <label>
-                    <input type="radio" name="curi1" value="naoSabia"> Não sabia
-                </label> -->
-        </div>
-     
-        <div class="blocao_2">
+    </div>
+
+    <div class="blocao_2">
         <div class="bloco blocoA2"></div>
         <div class="bloco blocoB2"></div>
         <div class="bloco blocoC2"></div>
+    </div> -->
+
+
+   
+
+    <nav class="menuLateral">
+
+        <div class="botExpandir">
+            <i class="bi bi-list" id="btn-exp"></i>
         </div>
 
-        
-<div class="pagdois" id="paginadois">
-            <div class="linhatempo">
-
-                <div class="containerum esquerda">
-                    <div class="caixatxt">
-                        <h2><b>Origem da dança</b></h2>
-                        <small>1200 - 1900</small>   
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl leo, ultrices eu interdum ac, efficitur at ex. Sed nec purus in orci semper mattis in eu elit. Duis tristique
-                        </p>
-                    </div>
-                </div>
+        <ul>
 
 
+            <li class="item-menu ativo">
+                <a href="index2.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Home</span>
 
-                <div class="containerum direita">
-                    <div class="caixatxt">
-                        <h2><b>Ballet na itália</b></h2>
-                        <small>1999 - 1900</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl leo, ultrices eu interdum ac, efficitur at ex. Sed nec purus in orci semper mattis in eu elit. Duis tristique, nisl non auctor scelerisque, neque libero accumsan mauris, et dictum lorem erat quis sapien. In sit amet convallis magna. Maecenas nec vestibulum neque. Proin et tincidunt nisi, ac consectetur nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucib
-                        </p>
-                    </div>
-                </div>
-                <div class="containerum esquerda">
-                    <div class="caixatxt">
-                        <h2><b>Ballet se expande</b></h2>
-                        <small>1200 - 1900</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl leo, ultrices eu interdum ac, efficitur at ex. Sed nec purus in orci semper mattis in eu elit. Duis tristique, nisl non auctor scelerisque, neque libero accumsan mauris, et dictum lorem erat quis sapien. In sit amet convallis magna. Maecenas nec vestibulum neque. Proin et tincidunt nisi, ac consectetur nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucib
-                        </p>
-                    </div>
-                </div>
-                <div class="containerum direita">
-                    <div class="caixatxt">
-                        <h2><b>Chegada no Brasil</b></h2>
-                        <small>1200 - 1900</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl leo, ultrices eu interdum ac, efficitur at ex. Sed nec purus in orci semper mattis in eu elit. Duis tristique, nisl non auctor scelerisque, neque libero accumsan mauris, et dictum lorem erat quis sapien. In sit amet convallis magna. Maecenas nec vestibulum neque. Proin et tincidunt nisi, ac consectetur nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucib
-                        </p>
-                    </div>
-                </div>
-                <div class="containerum esquerda">
-                    <div class="caixatxt">
-                        <h2><b>Dias atuais</b></h2>
-                        <small>1200 - 1900</small>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl leo, ultrices eu interdum ac, efficitur at ex. Sed nec purus in orci semper mattis in eu elit. Duis tristique, nisl non auctor scelerisque, neque libero accumsan mauris, et dictum lorem erat quis sapien. In sit amet convallis magna. Maecenas nec vestibulum neque. Proin et tincidunt nisi, ac consectetur nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucib
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="timeline.html">
+                    <span class="icon"><i class="bi bi-calendar-range"></i></span>
+                    <span class="txt-link">Timeline</span>
+
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-ui-checks-grid"></i></span>
+                    <span class="txt-link">Quiz</span>
+
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-layout-text-window-reverse"></i></span>
+                    <span class="txt-link">Dashboard</span>
+
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-eye"></i></span>
+                    <span class="txt-link">Curiosidades</span>
+
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="sobreMim.html">
+                    <span class="icon"><i class="bi bi-emoji-smile"></i>
+                    </span>
+                    <span class="txt-link">Sobre mim</span>
+
+                </a>
+            </li>
+
+        </ul>
 
 
 
 
-       
-       
 </body>
 
 </html>
 <script>
-var jaSabia = 0;
-var naoSabia = 0;
+    var sabia = 0;
+    var naoSabia = 0;
+    var posicaoAtual = 0;
 
-document.querySelectorAll('input[name="curi1"]').forEach(input => {
-input.addEventListener('change', (event) => {
- if(event.target.value == "jaSabia"){
-    jaSabia++
-document.getElementById("contadorSabia").textContent = jaSabia;
-} else if(event.target.value == "naoSabia"){
-  naoSabia++;
-  document.getElementById("contadorNaoSabia").textContent = naoSabia;
+    const cartoes = document.querySelectorAll('.cartao')
+
+    function verCartoes(posicao){
+        for(var i = 0; i < cartoes.length; i++){
+         if(posicao == i){
+            cartoes[i].style.display = 'flex'
+         }else{
+            cartoes[i].style.display = 'none'
+         }
         }
-    });
-});
+    }
+    function resultado(tipo){
+      if(tipo == "sim"){
+    sabia++;
+      }else{
+        naoSabia++
+      }
+      document.getElementById('contadorSabia').innerText = sabia
+      document.getElementById('contadorNaoSabia').innerText = naoSabia
 
+      posicaoAtual++;
+
+      if(posicaoAtual < cartoes.length){
+        verCartoes(posicaoAtual);
+      }else{
+        for(var i = 0; i < cartoes.length; i++){
+            cartoes[i].style.display = 'none';
+        }
+        alert('Todas as curiosidades foram vistas. Veja sua pontuação!')
+      }
+    }
+    verCartoes(posicaoAtual);
 </script>

@@ -3,9 +3,135 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins';
-    background-color: #202020;;
+ body {
+     height: 2vh;
+    background-color: #202020;
+ }
+.corpo{
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(129, 10, 129, 0);
+}
+
+.cabeca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+}
+.eu{
+      display: flex;
+    flex-wrap: wrap;
+    margin-left: 8vw;
+    margin-top: 7vh;
+    width: 96.5vw;
+    height: 60vh;
+    background-color: #202020;
+    border-radius: 100px;
+    
+}
+.esquerda{
+    width: 50%;
+    height: 100%;
+  
+    border-radius: 50px;
+}
+.esquerda h2{
+    color: #FF0077;
+    font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.esquerda p{
+    font-size: 20px;
+    margin-left: 12px;
+    color: gray;
+}
+.direita{
+    width: 50%;
+    height: 100%;
+    background-color: #202020;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+ .imgeu{
+    width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+.icones{
+    color: gray;;
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+ nav.menuLateral {
+     width: 70px;
+     height: 100%;
+     background-color:#202020;
+     padding: 40px 0 40px 1%;
+     box-shadow: 3px 0 0 #FF0077;
+     position: fixed;
+     top: 0;
+     left: 0;
+     overflow: hidden;
+     transition: .5s;
+
+ }
+ nav.menuLateral.expandir{
+width: 300px;
+ }
+.botExpandir{
+   width: 100%;
+   padding: 10%; 
+}
+.botExpandir > i{
+color: white;
+font-size: 24px;
+cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu:hover{
+background-color: #FF0077;
+
+}
+ul li.item-menu{
+    transition: .3s;
+}
+ul li.ativo{
+    background-color: #FF0077;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 55px;
+    
+}
+nav.menuLateral.expadir .txt-link{
+margin-left: 70px;
+transition: .5s;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
 }
 .container{
     width: 100%;

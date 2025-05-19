@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     background-color: #202020;
+    left: 1000px;
 }
 .eu{
       display: flex;
@@ -144,11 +145,14 @@ h1{
     color: #FF0077;
    
 }
+.inicioTimeline p{
+    margin-left: 100px;
+}
 .inicio{
 align-items: center;
 justify-content: center;
     text-align: center;
-    margin-left: 140px;
+    margin-left: 1400px;
     display: flex;
     width: 80vw;
     
@@ -175,6 +179,7 @@ justify-content: center;
     align-items: center;
     background-color: #202020;
     margin-bottom: 20px;
+    margin-left: 300px;
 }
 .fundo2{
     margin-left: 110px;
@@ -256,6 +261,7 @@ img{
     /* width: 100vw; */
     background-color: #FF0077;
     height: 100px;
+    margin-top: 15px;
 }
 .obrigada{
     display: flex;
