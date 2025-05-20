@@ -121,7 +121,7 @@ ul li.item-menu a .icon > i{
 }
 
 .navLogo p {
-    color: wheat;
+    color: #FF0077;
     font-size: 25px;
     font-weight: 600;
     margin-left: 20px;
@@ -162,7 +162,7 @@ ul li.item-menu a .icon > i{
 
 .botao.log {
     background: rgba(0, 0, 0, 0.285);
-    color: wheat;
+    /* color: wheat; */
 }
 
 .botao:hover {
@@ -175,7 +175,7 @@ ul li.item-menu a .icon > i{
 }
 .link:hover,
 .ativo {
-    border-bottom: 2px solid wheat
+    border-bottom: 2px solid #FF0077;
 }
 .link {
     text-decoration: none;
@@ -195,15 +195,18 @@ ul li.item-menu a .icon > i{
     height: 450px;
     flex-wrap: nowrap;
 }
+
 .bloco{
 flex: 1;
 }
+
 label{
     display: block;
 }
+
 .blocoA{
  color: gray;
-background-color: #202020;
+background-color: #ff0000;
 }
 
 .container-cartao{
@@ -212,6 +215,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 20px;
+
 }
 .cartao{
     display: none;
@@ -291,42 +295,22 @@ display: flex;
     width: 50%;
     background-color: aqua;
 }
-.blocoC{
-    display: flex;
-    background-color: blueviolet;
-    width: 512px;
-    height: 450px;
-}
-.blocoC label{
-    display: block;
-}
-.blocao_2{
-    display: flex;
-    width: 100vw;
-    height: 450px;
-}
-.blocoA2{
-background-color: rgb(0, 79, 14);
-}
-.blocoB2{
-    background-color: rgb(226, 0, 188);
-}
-.blocoC2{
-    background-color: rgb(226, 43, 43);
-}
 
 .container_contador{  
  display: flex;
- width: 100px;
+ width: 300px;
  text-align: center;
  justify-content: center;
  align-items: center;
+ background-color: #ffffff;
+ margin-left: 700px;
+ height: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 } 
 .contador{
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1400px;
+    
 }
 
 .pagdois{
@@ -337,96 +321,4 @@ background-color: rgb(0, 79, 14);
     background-color: rgba(151, 69, 69, 0.723);
     min-height: 100vh;
    
-}
-.pagdois h2{
-    color: black;
-}
-.linhatempo{
-    position: relative;
-    max-width: 1200px;
-    margin: 100px auto;
-}
-.containerum{
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    background-color:wheat;
-    border-radius: 4px;
-}
-.caixatxt{
-    padding: 20px 30px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    border-radius: 6px;
-    font-size: 15px;
-}
-.esquerda{
-   left: 0; 
-}
-.direita{
-    left: 50%;
-}
-.pag4{
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-    background-color: rgb(251, 251, 251);
-    min-height: 100vh;
-    background-color:#ffffff;
-}
-.cont{
-    display: grid;
-    place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
-    color: rgb(0, 0, 0);
-}
-.card{
-    display: grid;
-    row-gap: 3.5rem;
-}
-.article_card{
-    position: relative;
-    overflow: hidden;
-}
-.cardum{
-    width: 328px;
-    border-radius: 1.3rem;
-}
- .dados{
- width: 280px;
- background-color: var(--cont-color);
- padding: 1.5rem 2rem;
- box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-border-radius: 1rem;
-bottom: -9rem;
-left: 0;
-right: 0;
-margin-inline: auto;
-/* opacity: 0; */
-transition: opacity 1s 1s;
-} 
-.descricaoCard{
-    display: block;
-    font-size: var(--small-font-size, 1.5rem);
-    margin-bottom:  .25rem; 
-}
-.tituloCard{
-    font-size:var(--h2-font-size);
-    font-weight: 500;
-     color: var(--titulo-color);
-    margin-bottom:  .75rem; 
-}
-.botaoCard{
-    text-decoration: none;
-    font-size: var(--small-font-size, 1.5rem);
-    font-weight: 500;
-    color: var(--first-color);
-}
-.botaoCard:hover{
-    text-decoration: underline;
-
-} 
-.animacaoTitulo{
-    margin-left: 12px;
 }
