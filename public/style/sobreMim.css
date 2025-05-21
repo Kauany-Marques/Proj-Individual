@@ -164,6 +164,7 @@
      justify-content: center;
      left: 102px;
      color: #FF0077;
+     margin-top: 15px;
 
  }
 
@@ -240,19 +241,23 @@
 .caixagrandona {
     width: 90vw;
     height: 80vh;
-    background-color: yellow;
+    background-color: #202020;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; /* ou center */
+    justify-content: flex-start; 
     padding: 20px;
-    gap: 10px; /* pode diminuir para 5px ou 0 se quiser mais perto */
+    gap: 10px; 
+    font-size: 30px;
 }
 
 
 
  .textoDoLado {
+    margin-top: 50px;
+    text-align: justify;
      width: 50%;
+     height: 400px;
      background-color: #202020;
      color: white;
      padding: 20px;
@@ -267,7 +272,8 @@
  }
 
  .textoDoLado p {
-     font-size: 18px;
+    color: #988b8b;
+     font-size: 20px;
      line-height: 1.5;
  }
 
@@ -275,14 +281,14 @@
 
  .cont {
     border-radius: 5px;
-    width: 60vmin; /* para caber junto */
-    margin: 0; /* tira margens */
-    transform: none; /* tira o transform que desloca */
+    width: 60vmin; 
+    margin-top: 55px;
+    transform: none; 
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-     margin-left: 200px;
+     margin-left: 170px;
 }
  
 
@@ -335,13 +341,14 @@
      /* width: 100vw; */
      background-color: #FF0077;
      height: 100px;
-     margin-top: 15px;
+  margin-bottom: 80px;
+
  }
 
  .obrigada {
      display: flex;
      font-size: 20px;
-     margin-left: 900px;
+     margin-left: 600px;
      color: rgb(0, 0, 0);
  }
 

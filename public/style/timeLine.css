@@ -4,15 +4,37 @@
     box-sizing: border-box;
 }
  body {
-     height: 2vh;
-    background-color: #202020;
+ height: 100vh;
+    background-color: black;
  }
 .corpo{
     display: flex;
     overflow: hidden;
     background-color: rgba(129, 10, 129, 0);
+    justify-content: center;
+    align-items: center;
 }
-
+.corpoInicio{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.inicioTimeline{
+    width: 90vw;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+.inicioTimeline p{
+    font-size: 23px;
+}
 .cabeca{
     display: flex;
     justify-content: center;
@@ -44,7 +66,7 @@
   margin-top: 15px;
 }
 .esquerda p{
-    font-size: 20px;
+    font-size: 50px;
     margin-left: 12px;
     color: gray;
 }
@@ -138,7 +160,7 @@ ul li.item-menu a .icon > i{
     max-width: 1140px;
     margin: 0 auto;
     padding: 100px 15px;
-    color: #fff;
+    color: #FF0077;
 }
 .inicioTimeline{
     margin-left: 30px;
@@ -178,7 +200,7 @@ margin-bottom: 0;
          line-height: 30px;
          margin-bottom: 10px;   
         }
-        .timelie .timeline-content p{
+        .timeline .timeline-content p{
             font-size: 16px;
             line-height: 30px;
             font-weight: 300;
@@ -254,4 +276,10 @@ margin-bottom: 0;
                 top: 0;
                 left: -31px;
             }
+        }
+        img{
+            margin-left: 100px;
+            border-radius: 5px;
+            width: 50%;
+            height: 20%;
         }
