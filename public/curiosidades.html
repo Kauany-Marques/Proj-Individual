@@ -7,26 +7,38 @@
     <title>Curiosidades</title>
     <link rel="stylesheet" href="../style/curiosidade.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-   
+
 
 </head>
 
 
 <body>
-<div class="blocao">
-
-
-
-
-</div>
-
     <div class="blocao">
-        <div class="blocoA">
-            <p>Bem-vindo às curiosidades. Aqui, encontrará informações que poucos conhecem. Registre seu conhecimento
-                nos campos "Já sabia" e "Não sabia", para incrementar ou decrementar o contador.</p>
+        <div class="topo">
+            <div class="textotopo">
+                <h1>Curiosidades sobre o ballet</h1>
+                  <p>Bem-vindo às curiosidades. Aqui, encontrará informações que poucos conhecem. Registre seu conhecimento
+                nos campos "Já sabia" e "Não sabia", para incrementar ou decrementar o contador e receber um título. </p>
+            </div>
+           <div class="cont">
 
+             <div class="contador">
+                <div class="titulocontador"><h3>Contador</h3></div>
+                    
+                <div class="sabianao">
+                    <h2>Já sabia <span id="contadorSabia">0</span></h2>
 
-            <div class="container_contador">
+                    <h2>Não Sabia <span id="contadorNaoSabia">0</span></h2>
+                    </div>
+                </div>
+           </div>
+
+        </div>
+        <!-- <div class="blocoA"> -->
+           
+           
+
+            <!-- <div class="container_contador">
                 <div class="contador">
                     <h1>Contador de respostas</h1>
                     <h2>Já sabia <span id="contadorSabia">0</span></h2>
@@ -37,167 +49,175 @@
 
         </div>
 
-    </div>
+    </div> -->
 
     <div class="bloco blocoB">
-        <!-- <div class="b1"></div>
-        <div class="b2"></div> -->
+
         <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/" alt="">
-            </div>
-            <div class="dir">
-                <h1>Curiosidade 1</h1>
-                <h4><strong>Tupac</strong> já fez ballet</h4>
-                <p>Tupac matriculou-se na escola de artes, onde estudou balé intensamente por três anos.
-                     Participou de diversas variações e produções, 
-                    incluindo O Quebra-Nozes, de Tchaikovsky, onde interpretou o Rei dos Ratos.
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 1</h1>
+                    <h4><strong>Tupac</strong> já fez ballet</h4>
+                    <p>Tupac matriculou-se na escola de artes, onde estudou balé intensamente por três anos.
+                        Participou de diversas variações e produções,
+                        incluindo O Quebra-Nozes, de Tchaikovsky, onde interpretou o Rei dos Ratos.
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-           <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo10.jpg" alt="">
-            </div>
-            <div class="dir">
-                <h1>Curiosidade 2</h1>
-                <h4><strong>Sapatilhas de ponta</strong> já fez ballet</h4>
-                <p>As famosas sapatilhas de ponta só são introduzidas no aprendizado depois de aproximadamente 4 anos de prática, na
-                     faixa dos 11 anos de idade. A bailarina se equilibra numa área de 2,5cm².</p>
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo10.jpg" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 2</h1>
+                    <h4><strong>Sapatilhas de ponta</strong> já fez ballet</h4>
+                    <p>As famosas sapatilhas de ponta só são introduzidas no aprendizado depois de aproximadamente 4
+                        anos de prática, na
+                        faixa dos 11 anos de idade. A bailarina se equilibra numa área de 2,5cm².</p>
 
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-           <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo11.jpg" alt="">
-            </div>
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo11.jpg" alt="">
+                </div>
 
-            <div class="dir">
-                <h1>Curiosidade 3</h1>
-                <h4><strong>Primeira bailarina negra</strong> já fez ballet</h4>
-                <p>A primeira bailarina negra a ocupar o cargo de “primeira bailarina” no American Ballet Theater foi Misty Copeland, em 2015.</p>
+                <div class="dir">
+                    <h1>Curiosidade 3</h1>
+                    <h4><strong>Primeira bailarina negra</strong> já fez ballet</h4>
+                    <p>A primeira bailarina negra a ocupar o cargo de “primeira bailarina” no American Ballet Theater
+                        foi Misty Copeland, em 2015.</p>
 
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
-        </div>
-
-           <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo12.jpg" alt="">
-            </div>
-            <div class="dir">
-                <h1>Curiosidade 4</h1>
-                <h4><strong>Capacidade pulmonar</strong> já fez ballet</h4>
-                <p>Os movimentos rítmicos e acrobáticos do balé ajudam a fortalecer os músculos do corpo, especialmente os membros
-                     inferiores, que são os mais utilizados durante a dança. Isso faz com que o coração tenha que bombear
-                      mais sangue para fornecer oxigênio e nutrientes para esses músculos, o que melhora a circulação sanguínea
-                       e aumenta a capacidade cardiopulmonar</p>
-
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
-            </div>
-        </div>
         </div>
 
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo12.jpg" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 4</h1>
+                    <h4><strong>Capacidade pulmonar</strong> já fez ballet</h4>
+                    <p>Os movimentos rítmicos e acrobáticos do balé ajudam a fortalecer os músculos do corpo,
+                        especialmente os membros
+                        inferiores, que são os mais utilizados durante a dança. Isso faz com que o coração tenha que
+                        bombear
+                        mais sangue para fornecer oxigênio e nutrientes para esses músculos, o que melhora a circulação
+                        sanguínea
+                        e aumenta a capacidade cardiopulmonar</p>
 
-         <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo13.jpg" alt="">
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
             </div>
-            <div class="dir">
-                <h1>Curiosidade 5</h1>
-                <h4><strong>Van Damme</strong> já fez ballet</h4>
-                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
-                    qualquer coisa”.
-                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
-
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
-            </div>
-        </div>
-        </div>
-          <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo14.jpg" alt="">
-            </div>
-            <div class="dir">
-                <h1>Curiosidade 6</h1>
-                <h4><strong>Van Damme</strong> já fez ballet</h4>
-                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
-                    qualquer coisa”.
-                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
-
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
-            </div>
-        </div>
         </div>
 
-              <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo15.jpg" alt="">
-            </div>
-            <div class="dir">
-                <h1>Curiosidade 7</h1>
-                <h4><strong>Van Damme</strong> já fez ballet</h4>
-                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
-                    qualquer coisa”.
-                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
 
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
-            </div>
-        </div>
-        </div>
-          <div class="container-cartao">
-        <div class="cartao">
-            <div class="esq">
-                <img src="../assets/images/fundo16.jpg" alt="">
-            </div>
-            <div class="dir">
-                <h1>Curiosidade 8</h1>
-                <h4><strong>Van Damme</strong> já fez ballet</h4>
-                <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver a
-                    qualquer coisa”.
-                    O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo13.jpg" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 5</h1>
+                    <h4><strong>Van Damme</strong> já fez ballet</h4>
+                    <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver
+                        a
+                        qualquer coisa”.
+                        O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
 
-                      <div class="botoes">
-                <button onclick="resultado('sim')" class="botSim">Já sabia</button>
-                <button onclick="resultado('nao')" class="botNao">Não sabia</button>
-            </div>
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo14.jpg" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 6</h1>
+                    <h4><strong>Van Damme</strong> já fez ballet</h4>
+                    <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver
+                        a
+                        qualquer coisa”.
+                        O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
+            </div>
         </div>
-           
- <!-- <div class="bloco blocoC">
+
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo15.jpg" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 7</h1>
+                    <h4><strong>Van Damme</strong> já fez ballet</h4>
+                    <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver
+                        a
+                        qualquer coisa”.
+                        O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-cartao">
+            <div class="cartao">
+                <div class="esq">
+                    <img src="../assets/images/fundo16.jpg" alt="">
+                </div>
+                <div class="dir">
+                    <h1>Curiosidade 8</h1>
+                    <h4><strong>Van Damme</strong> já fez ballet</h4>
+                    <p>Jean-Claude Van Damme declarou “se você puder sobreviver a um treino de ballet, poderá sobreviver
+                        a
+                        qualquer coisa”.
+                        O ator praticou ballet por 5 anos antes de se tornar um astro de Hollywood.</p>
+
+                    <div class="botoes">
+                        <button onclick="resultado('sim')" class="botSim">Já sabia</button>
+                        <button onclick="resultado('nao')" class="botNao">Não sabia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="bloco blocoC">
         <label>
                     <input type="radio" name="curi1" value="sabia"> Já sabia
                 </label>
@@ -213,63 +233,63 @@
     </div> -->
 
 
-   
-
-    <nav class="menuLateral">
-
-        <div class="botExpandir">
-            <i class="bi bi-list" id="btn-exp"></i>
-        </div>
-
-        <ul>
 
 
-            <li class="item-menu">
-                <a href="index.html">
-                    <span class="icon"><i class="bi bi-house-door"></i></span>
-                    <span class="txt-link">Home</span>
+        <nav class="menuLateral">
 
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="timeline.html">
-                    <span class="icon"><i class="bi bi-calendar-range"></i></span>
-                    <span class="txt-link">Timeline</span>
+            <div class="botExpandir">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div>
 
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-ui-checks-grid"></i></span>
-                    <span class="txt-link">Quiz</span>
+            <ul>
 
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-layout-text-window-reverse"></i></span>
-                    <span class="txt-link">Dashboard</span>
 
-                </a>
-            </li>
-            <li class="item-menu ativo">
-                <a href="curiosidades.html">
-                    <span class="icon"><i class="bi bi-eye"></i></span>
-                    <span class="txt-link">Curiosidades</span>
+                <li class="item-menu">
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-house-door"></i></span>
+                        <span class="txt-link">Home</span>
 
-                </a>
-            </li>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="timeline.html">
+                        <span class="icon"><i class="bi bi-calendar-range"></i></span>
+                        <span class="txt-link">Timeline</span>
 
-            <li class="item-menu">
-                <a href="sobreMim.html">
-                    <span class="icon"><i class="bi bi-emoji-smile"></i>
-                    </span>
-                    <span class="txt-link">Sobre mim</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-ui-checks-grid"></i></span>
+                        <span class="txt-link">Quiz</span>
 
-                </a>
-            </li>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="dashboardk.html">
+                        <span class="icon"><i class="bi bi-layout-text-window-reverse"></i></span>
+                        <span class="txt-link">Dashboard</span>
 
-        </ul>
+                    </a>
+                </li>
+                <li class="item-menu ativo">
+                    <a href="curiosidades.html">
+                        <span class="icon"><i class="bi bi-eye"></i></span>
+                        <span class="txt-link">Curiosidades</span>
+
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="sobreMim.html">
+                        <span class="icon"><i class="bi bi-emoji-smile"></i>
+                        </span>
+                        <span class="txt-link">Sobre mim</span>
+
+                    </a>
+                </li>
+
+            </ul>
 
 
 
@@ -284,35 +304,35 @@
 
     const cartoes = document.querySelectorAll('.cartao')
 
-    function verCartoes(posicao){
-        for(var i = 0; i < cartoes.length; i++){
-         if(posicao == i){
-            cartoes[i].style.display = 'flex'
-         }else{
-            cartoes[i].style.display = 'none'
-         }
+    function verCartoes(posicao) {
+        for (var i = 0; i < cartoes.length; i++) {
+            if (posicao == i) {
+                cartoes[i].style.display = 'flex'
+            } else {
+                cartoes[i].style.display = 'none'
+            }
         }
     }
-    function resultado(tipo){
-      if(tipo == "sim"){
-    sabia++;
-      }else{
-        naoSabia++
-      }
-      document.getElementById('contadorSabia').innerText = sabia
-      document.getElementById('contadorNaoSabia').innerText = naoSabia
-
-      posicaoAtual++;
-
-      if(posicaoAtual < cartoes.length){
-        verCartoes(posicaoAtual);
-      }else{
-        for(var i = 0; i < cartoes.length; i++){
-            cartoes[i].style.display = 'none';
+    function resultado(tipo) {
+        if (tipo == "sim") {
+            sabia++;
+        } else {
+            naoSabia++
         }
-        alert('Todas as curiosidades foram vistas. Veja sua pontuação!')
-      }
+        document.getElementById('contadorSabia').innerText = sabia
+        document.getElementById('contadorNaoSabia').innerText = naoSabia
+
+        posicaoAtual++;
+
+        if (posicaoAtual < cartoes.length) {
+            verCartoes(posicaoAtual);
+        } else {
+            for (var i = 0; i < cartoes.length; i++) {
+                cartoes[i].style.display = 'none';
+            }
+            alert('Todas as curiosidades foram vistas. Veja sua pontuação!')
+        }
     }
     verCartoes(posicaoAtual);
 </script>
- <script src="../js/menu.js"></script>
+<script src="../js/menu.js"></script>
