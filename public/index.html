@@ -13,14 +13,30 @@
 
 <body onload="validarSessao()">
     <div class="corpo">
+<div class="cabeca">
 
-        <div class="head">
-            <h1></h1>
-            <p>akamsksadsklskmklasdl</p>
-        </div>
+<div class="esquerda"></div>
+<div class="direita">  <span class="txt-link" id="b_usuario"></span></div>
+
+</div>
+        <!-- <div class="head">
+            <div class="headesquerda">
+            <h1>oi</h1>
+            <p>Ballet .</p>
+            </div>
+              <div class="oi">
+              
+            </div>
+        </div> -->
+   
         <div class="corpo1">
+<div class="esqu">
 
 
+</div>
+<div class="dir">
+   
+</div>
 
         </div>
     </div>
@@ -38,14 +54,14 @@
             <!-- <div class="olausuario">
 
        </div> -->
-            <div class="oi">
+            <!-- <div class="oi">
                 <li class="item-menu">
                     <a href="#">
                     <span class="icon"><i class="bi bi-person-workspace"></i></span>
                     <span class="txt-link" id="b_usuario"></span>
 
                     </a>
-                </li>
+                </li> -->
             
 </div>
             <li class="item-menu ativo ">
@@ -139,15 +155,47 @@
 
 <!-- 
 <div class="containerzao"> -->
+ <div class="container1" id="painel">
 
-<!-- <div class="container1">
-
-        <div id="titulo">
+        <!-- <div id="titulo">
             <h1>blablabla</h1>
             <h4 id="textos"></h4>
-        </div>
+        </div> -->
 
     </div>
-</div> -->
 
-<!-- <div class="index02">
+<div class="pt2">
+
+
+
+</div>
+
+</div> 
+
+<script>
+const frases = [
+     "A arte existe para que a realidade não nos destrua - Friedrich Nietzsche",
+    "Quando você dança, você pode aproveitar o luxo de ser você mesmo. - Paulo Coelho",
+    "Os dançarinos são atletas de Deus. -Albert Einstein",
+    "A dança nada mais é do que o reflexo do que o nosso corpo transforma em arte. - Antônio Gades",
+    "Dançar é como sonhar com os pés. - Constança",
+    "A dança é a linguagem escondida da alma. - Martha Graham",
+    "A vida é a dança do instante, e o bailarino é o artista do tempo. — Jerome Robbins", 
+    "No movimento do corpo, descobrimos o silêncio da alma. — Anna Pavlova" 
+
+
+];
+
+ function aparecerfrase() {
+   
+    const numA = Math.floor(Math.random() * frases.length);
+    painel.textContent = frases[numA];
+  }
+
+
+  aparecerfrase();
+
+
+  setInterval(aparecerfrase, 4000);
+
+</script>

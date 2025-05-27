@@ -18,7 +18,7 @@
  body {
      height: 100vh;
      background-color: #202020;
-
+    position: fixed;
  }
 
  .inicio {
@@ -41,7 +41,7 @@
  nav.menuLateral {
      width: 70px;
      height: 100%;
-     background-color: #202020;
+     background-color:#202020;
      padding: 40px 0 40px 1%;
      box-shadow: 3px 0 0 #FF0077;
      position: fixed;
@@ -51,65 +51,55 @@
      transition: .5s;
 
  }
-
- nav.menuLateral.expandir {
-     width: 300px;
+ nav.menuLateral.expandir{
+width: 300px;
  }
+.botExpandir{
+   width: 100%;
+   padding: 10%; 
+}
+.botExpandir > i{
+color: white;
+font-size: 24px;
+cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu:hover{
+background-color: #FF0077;
 
- .botExpandir {
-     width: 100%;
-     padding: 0;
-     margin-left: 14px;
- }
+}
+ul li.item-menu{
+    transition: .3s;
+}
+ul li.ativo{
+    background-color: #FF0077;
+}
 
- .botExpandir>i {
-     color: white;
-     font-size: 24px;
-     cursor: pointer;
- }
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 55px;
+    
+}
+nav.menuLateral.expadir .txt-link{
+margin-left: 70px;
+transition: .5s;
+}
 
- ul {
-     height: 100%;
-     list-style-type: none;
- }
-
- ul li.item-menu:hover {
-     background-color: #FF0077;
-
- }
-
- ul li.item-menu {
-     transition: .3s;
- }
-
- ul li.ativo {
-     background-color: #FF0077;
- }
-
- ul li.item-menu a {
-     color: white;
-     text-decoration: none;
-     font-size: 23px;
-     padding: 12px 4%;
-     display: flex;
-     margin-bottom: 20px;
-     line-height: 40px;
- }
-
- ul li.item-menu a .txt-link {
-     margin-left: 55px;
-
- }
-
- nav.menuLateral.expandir .txt-link {
-     margin-left: 70px;
-     transition: .5s;
- }
-
- ul li.item-menu a .icon>i {
-     font-size: 30px;
-     margin-left: 3px;
- }
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
 
  h1 {
      padding: 12px;
@@ -138,8 +128,9 @@
      transform: translate(-50%);
      width: 80%;
      max-width: 600px;
-     background-color: rgba(240, 248, 255, 0.8);
+     background-color: rgba(8, 67, 118, 0.8);
      margin-bottom: 20px;
+     font-size: 20px;
      padding: 16px;
  }
 
@@ -176,11 +167,9 @@
  .head{
     width: 100vw;
     height: 15vh;
-    background-color: #202020;
+    background-color: #b7ff00;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
     color: aliceblue;
  }
  .head p{
@@ -188,12 +177,56 @@
     font-size: 20px;
     color: grey;
  }
+ .headesquerda{
+width: 50%;
+height: auto;
+background-color: blue;
+ }
+ .oi{
+   width: 50%;
+   height:auto ;
+   background-color: aqua;
+   margin-left: 16vw;
+   color: black;
+ }
+ 
  .corpo1{
+    display: flex;
     width: 100vw;
     height: 80vh;
     background-color: aqua;
+    flex-direction: row
 }
 
-.oi{
-    font-size: 2px;
+.esqu{
+    width: 50vw;
+    height: 80vh;
+    background-color: #4c4747;
+}
+.dir{
+    width: 50vw;
+    height: 80vh;
+    background-color: #202020;
+}
+.cabeca{
+    width: 100vw;
+    height: 10vh;
+    background-color: #202020;
+    display: flex;
+}
+.esquerda{
+    width: 50%;
+    height: 10vh;
+    background-color: #202020;
+}
+.direita{
+  width: 50%;
+    height: 10vh;
+    background-color: #202020;  
+    text-align: end;
+    margin-top: 2vh; 
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    margin-right: 6px;
 }
