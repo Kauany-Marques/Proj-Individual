@@ -358,3 +358,13 @@
      justify-content: center;
 
  }
+ #gifballet {
+    background-image: url(../assets/images/BailarinaGif.gif);
+    background-size: contain;
+
+    background-repeat: no-repeat;  
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}

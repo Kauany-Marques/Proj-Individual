@@ -3,7 +3,7 @@ var quizModel = require("../models/quizModel");
 
 function finalizar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo quiz,html
-    var pontos = req.body.pontosServer;
+    var pontos = req.body.respostasCorretasServer;
 
     // Faça as validações dos valores
     if (pontos == undefined) {

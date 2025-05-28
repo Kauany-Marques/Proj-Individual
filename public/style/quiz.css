@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Woof';
+
+}
+
+.corpo {
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
+}
+
+body {
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.menuLateral {
+    width: 70px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #FF0077;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+nav.menuLateral.expandir {
+    width: 300px;
+}
+
+.botExpandir {
+    width: 100%;
+    padding: 10%;
+}
+
+.botExpandir>i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover {
+    background-color: #FF0077;
+
+}
+
+ul li.item-menu {
+    transition: .3s;
+}
+
+ul li.ativo {
+    background-color: #FF0077;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 55px;
+
+}
+
+nav.menuLateral.expadir .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+h1 {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 102px;
+    color: #FF0077;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+.container1 {
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 800px;
+
+    border: 2px solid saddlebrown;
+    border-radius: 6px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vw;
+    margin-top: 10%;
+}
+
+.textotopo {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background-color: #202020;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizes {
+    width: 80vw;
+    height: 40vh;
+    background-color: white;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.partebaixo {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quiz1 {
+    width: 25vw;
+    height: 40vh;
+    background-color: #202020;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.quiz2 {
+    width: 25vw;
+    display: flex;
+    height: 40vh;
+    background-color: #202020;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz3 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 40vh;
+    background-color: #202020;
+}
+
+.botaoQuiz {
+    width: 50px;
+    height: 50px;
+    background-color: #FF0077;
+}
