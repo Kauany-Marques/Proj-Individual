@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="./style/quiz1.css">
 </head>
 <body>
-    <div class="container">
-<h1>AAAAAAAAAAAAA</h1>
 
- <div class="container1" id="fundo">
+        
+     <div class="corpo">
+            <div class="container1" id="fundo">
                 
                 <div id="question" class="pergunta"></div>
                 <div id="options" class="opcoes"></div>
@@ -18,17 +18,38 @@
                     <p id="resultado-texto"></p>
                     <br>
                 </div>
-        <a href="quiz.html"><button class="botaoQuiz">Voltar</button></a>
-
+              <button onclick="voltar()" id="menuButton" class="voltar">Voltar</button>
             </div>
 
+        <div class="divdica">
+ <img src="./assets/images/BailarinaGif.gif" alt="" class="bailarina" onclick="mostrarDica()">
+
+    <div id="dica">
+        💡 Dica: Michael Jackson saberia responder!
+        </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/menu.js"></script>
+
+    <script src="./js/quiz.js"></script>
+
+    <script>
+        function voltar(){
+             window.location.href = "quiz.html"
+        }
+    </script>
+
+<script>function mostrarDica() {
+    document.getElementById("dica").style.display = "block";
+}</script>
 
 
-
-
-
-
-            </div>
 </body>
-</html> 
-<script src="quiz.js"></script>
+</html>
+<script> 
+
+
+</script>

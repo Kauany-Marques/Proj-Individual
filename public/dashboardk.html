@@ -20,9 +20,9 @@
                 <span class="txt-link" id="b_usuario"></span>
 
 
-                <div class="voltar()">voltar</div>
+               
             </div>
-
+         <a href="index.html"><button class="botaoQuiz">Voltar</button></a>
         </div>
 
 
@@ -89,4 +89,22 @@
         }
       }
     });
+
+ const ct = document.getElementById('verGrafico2');
+
+ new Chart(ct, {
+  type: 'line',
+  data: data [22, 23, 24, 25, 26, 27],
+  options: {
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: (ctx) => 'Point Style: ' + ctx.chart.data.datasets[0].pointStyle,
+      }
+    }
+  }
+});
+
+    
   </script>
