@@ -29,8 +29,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* ocupa toda a largura da tela */
-  padding: 0 8vw; /* espaço nas laterais */
+  width: 100%; 
+  padding: 0 8vw; 
   color: #f1e5de;
 }
 .titulos h1{
@@ -269,4 +269,44 @@ a {
 a:hover{
       transform: scale(7.1);
     color: #582d15;
+}
+.corpo4{
+    margin-top: 12vh;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.tituloc4{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    margin-top: 3vh;
+    justify-content: center ;
+    align-items: center;
+    font-size: 50px;
+}
+
+.corpoc4{
+width: 100%;
+height: 90%;
+background-color: #ffffff;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.videoc4{
+    display: flex;
+width: 60%;
+height: 90%;
+background-color: #582d15;
+justify-content: center;
+align-items: center;
+}
+.videoc4 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
