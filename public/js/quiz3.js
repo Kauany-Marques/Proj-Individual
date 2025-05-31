@@ -126,7 +126,7 @@ function showResult() {
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                respostasCorretasServer: respostasCorretas,
-               respostasCorretasServer: respostasCorretas,
+              fkQuizServer: fkQuiz,
                 fkUsuarioServer: fkUsuario,
             }),
         })
@@ -137,7 +137,7 @@ function showResult() {
                    
                     console.log("Cadastro feito")
 
-                    window.location = "login.html";
+                    window.location = "quiz.html";
                 } else {
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }

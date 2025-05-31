@@ -140,7 +140,7 @@ function showResult() {
                    
                     console.log("Cadastro feito")
 
-                    window.location = "login.html";
+                    window.location = "quiz.html";
                 } else {
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }

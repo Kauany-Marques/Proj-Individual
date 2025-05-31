@@ -2,21 +2,46 @@
  body, html{
     padding: 0;
     margin: 0;
-     
+
+    
  }
 .corpo{
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
-    overflow: hidden;
+     position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/images/fundindex.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
-.corpo video{
+.corpo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    flex-direction: row;
+}
+.titulos{
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* ocupa toda a largura da tela */
+  padding: 0 8vw; /* espaço nas laterais */
+  color: #f1e5de;
+}
+.titulos h1{
+    font-size: 130px;
+}
+.titulos h4{
+    margin-left: 10vw;
+    font-size: 30px;
 }
 * {
-    font-family: 'Woof';
+    font-family: 'Helvetica Neue';
     margin: 0;
     padding: 0;
      box-sizing: border-box;
@@ -25,8 +50,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-size: cover;
+ 
     background-attachment: fixed;
     /* display: flex;
     flex-direction: row; */
@@ -98,9 +122,9 @@ ul li.item-menu a .icon > i{
     display: flex;
     height: 40px;
     width: 40px;
-    margin-top: 33px;
+    /* margin-top: 33px;
     margin-left: 5px;
-    margin-right: 50px;
+    margin-right: 50px; */
 }
 
 .container {
@@ -155,14 +179,94 @@ ul li.item-menu a .icon > i{
     margin: 0 25px;
 }
 
-.topo{
-width: 20vw;
-height: 3vh;
-background-color: white;
-}
+
 .corpo2{
     
     width: 100%;
-    height: 90vh;
-    background-color: blue;
+    height: 80vh;
+    background-color: rgb(221, 221, 221);
+display: flex;}
+.c2esq{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+width: 40%;
+height: 100%;
+background-color: #ffffff;
+
+}
+.c2esq a{
+    height:100px;
+    width: 45px;
+}
+.c2esq h1{
+   color: #000000;
+   font-weight: bold;
+   font-size: 84px;
+   margin-top: 45px;
+   margin-top: 20vh;
+   margin-left: 5vw;
+}
+.c2dir{
+    display: flex;
+width: 64%;
+height: auto;
+background-color: #ffffff;
+justify-content: center;
+align-items: center;
+font-size: 33px;
+color: black;
+padding: 20px;
+
+
+}
+.txt{
+    width: 80%;
+}
+.corpo3 {
+  width: 100%;
+  height: 45vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.cartao {
+  width: 220px;
+  height: 100%;
+  background-color: #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.cartao:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cartao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cartao video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cartao p{
+    color: black;
+    font-size: 22px;
+}
+a {
+    color: #000;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+a:hover{
+      transform: scale(7.1);
+    color: #582d15;
 }
