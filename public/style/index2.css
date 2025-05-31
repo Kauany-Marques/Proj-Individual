@@ -59,9 +59,9 @@ body {
  nav.menuLateral {
      width: 70px;
      height: 100%;
-     background-color:#202020;
+     background-color:#000;
      padding: 40px 0 40px 1%;
-     box-shadow: 3px 0 0 #FF0077;
+     box-shadow: 3px 0 0 #000;
      position: fixed;
      top: 0;
      left: 0;
@@ -86,14 +86,15 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-background-color: #FF0077;
+background-color: wheat;
+color: black;
 
 }
 ul li.item-menu{
     transition: .3s;
 }
 ul li.ativo{
-    background-color: #FF0077;
+    background-color: rgb(148, 103, 103);
 }
 
 ul li.item-menu a{
@@ -155,7 +156,7 @@ ul li.item-menu a .icon > i{
 }
 
 .navLogo p {
-    color: #FF0077;
+    color: #000;
     font-size: 25px;
     font-weight: 600;
     margin-left: 20px;
@@ -266,24 +267,26 @@ a {
   text-decoration: none;
   transition: transform 0.3s ease;
 }
-a:hover{
+.cartao a:hover{
       transform: scale(7.1);
     color: #582d15;
 }
-.corpo4{
+/* .corpo4{
     margin-top: 12vh;
     width: 100%;
-    height: 100vh;
-    background-color: #fff;
+    height: 110vh;
+    background-color: #ff0000;
     display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+    align-items: center;
+} */
 .tituloc4{
     display: flex;
     width: 100%;
     height: 8vh;
     background-color: #ffffff;
-    margin-top: 3vh;
+    margin-top: 12vh;
     justify-content: center ;
     align-items: center;
     font-size: 50px;
@@ -291,11 +294,15 @@ a:hover{
 
 .corpoc4{
 width: 100%;
-height: 90%;
-background-color: #ffffff;
+height: 80%;
+background-color: #fff;
 justify-content: center;
 align-items: center;
 display: flex;
+margin-top: 10vh;
+}
+.corpoc4 p{
+    font-size: 40px;
 }
 .videoc4{
     display: flex;
@@ -309,4 +316,31 @@ align-items: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.corpo5{
+width: 100%;
+height: 100vh;
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+}
+.corpo5 img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.topoc5{
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    margin-top: 4vh;
+}
+.corpoc5{
+    margin-top: 7vh;
+    width: 100%;
+    height: 90%;
+    background-color: #000;
 }
