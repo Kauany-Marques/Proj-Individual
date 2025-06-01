@@ -2,9 +2,26 @@
  body, html{
     padding: 0;
     margin: 0;
-
+    scroll-behavior: smooth;
+    scrollbar-color: black;
     
  }
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: white; /* Cor do scroll */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a9a9a9; 
+}
 .corpo{
      position: relative;
   width: 100%;
@@ -301,6 +318,9 @@ align-items: center;
 display: flex;
 margin-top: 10vh;
 }
+.imgcc2esq{
+    margin-top: 5vh;
+}
 .corpoc4 p{
     font-size: 40px;
 }
@@ -319,7 +339,7 @@ align-items: center;
 }
 .corpo5{
 width: 100%;
-height: 100vh;
+height: 140vh;
 background-color: #ffffff;
 display: flex;
 flex-direction: column;
@@ -341,6 +361,125 @@ flex-direction: column;
 .corpoc5{
     margin-top: 7vh;
     width: 100%;
-    height: 90%;
+    height: 95%;
     background-color: #000;
+}
+
+.corpoc5 h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 9vw;
+    margin-top: 7vh;
+}
+.tituloc5{
+display: flex;
+width: 100%;
+height: 20%;
+background-color: black;
+}
+.corpoc52{
+width: 100%;
+height: 80%;
+background-color: #fff;
+display: flex;
+}
+.cc2esq{
+width: 40%;
+height: 100%;
+background-color: #fff;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.imgcc2esq{
+width: 80%;
+height: 90%;
+margin-left:5vw;
+background-color: #a9a9a9;
+}
+.imgcc2esq img{
+    width: 100%;
+    height: 100%;
+}
+.cc2dir{
+    display: flex;
+    width: 60%;
+    height: 100%;
+     background-color: red;
+     flex-direction: column;
+     margin-top: 5vh;
+}
+.facil{
+    width: 100%;
+    height:33%;
+    background-color: #000;
+}
+.medio{
+    width: 100%;
+    height:33%;
+    background-color: #fafafa;
+}
+.dificil{
+  width: 100%;
+    height:33%;
+    background-color: #fff;
+}
+.titulodificuldades{
+    width: 100%;
+    height: 15%;
+    color: palegoldenrod;
+    padding: 5px;
+    display: flex;
+    background-color: #000;
+}
+.corpodificuldade{
+width: 100%;
+height: 75%;
+background-color: black;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+    width: 17%;
+    height: 90%;
+    background-color: yellow;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  flex-direction: column;
+  
+}
+.card:hover{
+transform: scale(1.05);
+  cursor: pointer;
+}
+.titulocard{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    color: white;
+}
+.corpocard{
+width: 100%;
+height: 80%;
+background-color: rgb(255, 255, 255);
+}
+.corpocard img{
+    object-fit: contain;
+}
+.corpocard video{
+ width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
