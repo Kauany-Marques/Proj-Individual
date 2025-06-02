@@ -35,6 +35,10 @@ const questions = [
     }
 ];
 
+if (!sessionStorage.EMAIL_USUARIO || !sessionStorage.NOME_USUARIO) {
+    alert("Você precisa fazer login para iniciar o quiz!");
+    window.location.href = "../login.html"; 
+}
 let currentQuestion = 0;
 let respostasCorretas = 0;
 

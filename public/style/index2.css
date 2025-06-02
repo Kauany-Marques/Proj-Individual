@@ -381,16 +381,17 @@ background-color: black;
 .corpoc52{
 width: 100%;
 height: 80%;
-background-color: #fff;
+background-color: #000;
 display: flex;
 }
 .cc2esq{
 width: 40%;
 height: 100%;
-background-color: #fff;
+background-color: #000;
 justify-content: center;
 align-items: center;
 display: flex;
+margin-top: 5px;
 }
 .imgcc2esq{
 width: 80%;
@@ -418,7 +419,7 @@ background-color: #a9a9a9;
 .medio{
     width: 100%;
     height:33%;
-    background-color: #fafafa;
+    background-color: black;
 }
 .dificil{
   width: 100%;
@@ -444,22 +445,57 @@ justify-content: center;
 align-items: center;
 }
 
-.card{
+.card {
     width: 17%;
     height: 90%;
-    background-color: yellow;
-  display: flex;
-  justify-content: center;
-  border-radius: 12px;
-  background-color: #fff;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  transition: transform 0.3s ease;
-  flex-direction: column;
-  
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.6s ease;
+    flex-direction: column;
+    position: relative;
+    perspective: 1200px;
 }
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card.virado .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-frente,
+.card-verso {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-frente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-verso {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
 .card:hover{
 transform: scale(1.05);
   cursor: pointer;
@@ -482,4 +518,36 @@ background-color: rgb(255, 255, 255);
  width: 100%;
   height: 100%;
   object-fit: contain;
+}
+#botaoSair {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#botaoSair:hover {
+    background-color: #cc005f;
+}
+
+#botaoLogin {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ff007f;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#botaoLogin:hover {
+    background-color: #cc005f;
+}
+#mensagemBemVindo{
+   padding-left: 5vw;
 }

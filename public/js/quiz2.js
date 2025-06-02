@@ -39,7 +39,6 @@ const resultElement = document.getElementById("result");
 const voltarButton = document.querySelector(".voltar");
 const bailarinaElement = document.querySelector(".bailarina");
 const dicaElement = document.getElementById("dica");
-// nomeando as funções para guiar as dicas
 function mostrarDica(){
     dicaElement.style.display = "block"
 }

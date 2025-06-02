@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="10x10" href="assets/images/cisneWheat.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<script src="./js/sessao.js" defer></script>
 
 
     <!-- <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'> -->
@@ -24,21 +25,22 @@
         <div class="titulos">
             <h1>BALLET</h1><br><br>
             <h4>A ARTE DA DANÇA</h4>
-            <a href="login.html"><button class="botaoQuiz">Voltar</button></a>
+            <button id="botaoSair" onclick="limparSessao()">Sair</button>
 
         </div>
-        <!-- 
-<video src="./assets/videos/corte01bom.mp4 "  autoplay
-  muted
-  loop
-  playsinline></video>-->
+  
     </div>
 
     <div class="corpo2">
         <div class="c2esq">
-            <h1>Bem vindo, <br>
-                usuário</h1>
+            <h1>Bem vindo, <br> <span id="b_usuario"></span> </h1>
         </div>
+       
+
+<div id="botaoLogin" class="sobreposta" style="display: none;">
+    <a href="./login.html">Faça login</a>
+</div>
+
         <div class="c2dir">
             <div class="txt">
                 <p> Revelando momentos únicos em que o balé expressa o corpo, a mente e a alma. Cada apresentação é
@@ -107,40 +109,76 @@
             <div class="facil">
                 <div class="titulodificuldades"><h5>Nível: fácil</h5></div>
                 <div class="corpodificuldade">
-                    <div class="card">
-                    <div class="titulocard">Plié</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/pliecerto.jpg" alt="">
-                    </div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="titulocard">Tendu</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/tendu.png" alt="">
-                    </div>
-                    </div>
 
-                    <div class="card">
-                    <div class="titulocard">Relevé</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/releve.png" alt="">
-                    </div>
-                    </div>
+                   <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Plié</div>
+            <div class="corpocard">
+                <img src="./assets/images/pliecerto.jpg" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Dobrar os joelhos</p>
+        </div>
+    </div>
+</div>
 
-                    <div class="card">
-                    <div class="titulocard">Dégagé</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/degagé.png" alt="">
-                    </div>
-                    </div>
+                  <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Tendu</div>
+            <div class="corpocard">
+                <img src="./assets/images/tendu.png" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Perna se estende suavemente para frente</p>
+        </div>
+    </div>
+</div>
 
-                    <div class="card">
-                    <div class="titulocard">Passé</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/passe.png" alt="">
-                    </div>
-                    </div>
+                     <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Relevé</div>
+            <div class="corpocard">
+                <img src="./assets/images/releve.png" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Elevar-se para a ponta dos pés</p>
+        </div>
+    </div>
+</div>
+
+  <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Degagé</div>
+            <div class="corpocard">
+                <img src="./assets/images/degagé.png" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Perna se estende e se desprende do chão</p>
+        </div>
+    </div>
+</div>
+
+                      <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Passé</div>
+            <div class="corpocard">
+                <img src="./assets/images/passe.png" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Levar um pé até o joelho da perna de apoio</p>
+        </div>
+    </div>
+</div>
 
                 </div>
 
@@ -148,40 +186,75 @@
             <div class="medio">
                 <div class="titulodificuldades"><h5>Nível: médio</h5></div>
                 <div class="corpodificuldade">
-                   <div class="card">
-                    <div class="titulocard">Ron De Jame</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/rondejamecerto.jpg" alt="">
-                    </div>
-                    </div>
-                    <div class="card">
-                    <div class="titulocard">Fondu</div>
-                    <div class="corpocard">
-                        <img src="./assets/images/fondu.png" alt="">
-                    </div>
-                    </div>
+                     <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Ron de Jame</div>
+            <div class="corpocard">
+                <img src="./assets/images/rondejamecerto.jpg" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Desenhar um semicírculo no chão ou no ar, com a perna</p>
+        </div>
+    </div>
+</div>
+
+                      <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Fondu</div>
+            <div class="corpocard">
+                <img src="./assets/images/fondu.png" alt="">
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Dobrar uma perna enquanto a outra se estende</p>
+        </div>
+    </div>
+</div>
                     
-                    <div class="card">
-                    <div class="titulocard">Balancé</div>
-                    <div class="corpocard">
-                        <video  src="./assets/videos/gif01.mp4 "autoplay loop muted playsinline></video>
-                    </div>
-                    </div>
+                   <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Balancé</div>
+            <div class="corpocard">
+               <video autoplay loop muted playsinline src="./assets/videos/gif01.mp4"></video>
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Mover-se alternando o equilíbrio entre os pés</p>
+        </div>
+    </div>
+</div>
+
+                     <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Pirouette</div>
+            <div class="corpocard">
+               <video autoplay loop muted playsinline src="./assets/videos/pirouette.mp4"></video>
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Giro de 360 graus sobre um pé de apoio</p>
+        </div>
+    </div>
+</div>
 
                     <div class="card">
-                    <div class="titulocard">Pirouette</div>
-                    <div class="corpocard">
-                        <video src="./assets/videos/pirouette.mp4" autoplay loop muted playsinline></video>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                    <div class="titulocard">Glissade</div>
-                    <div class="corpocard">
-                        <video src="./assets/videos/glissade.mp4" autoplay loop muted playsinline></video>
-
-                    </div>
-                    </div>
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Glissadé</div>
+            <div class="corpocard">
+               <video autoplay loop muted playsinline src="./assets/videos/glissade.mp4"></video>
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Deslize ou transição de um pé para o outro</p>
+        </div>
+    </div>
+</div>
                     
 
                 </div>
@@ -190,35 +263,75 @@
             <div class="dificil">
                 <div class="titulodificuldades">Nível: difícil</div>
                 <div class="corpodificuldade">
-                    <div class="card">
-                    <div class="titulocard"></div>
-                    <div class="corpocard">
-                    </div>
-                    </div>
+                       <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Grand Jeté</div>
+            <div class="corpocard">
+               <!-- <video autoplay loop muted playsinline src="./assets/videos/glissade.mp4"></video> -->
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Saltar com as pernas totalmente estendidas</p>
+        </div>
+    </div>
+</div>
 
-                  <div class="card">
-                    <div class="titulocard"></div>
-                    <div class="corpocard">
-                    </div>
-                    </div>
+                            <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Fouetté</div>
+            <div class="corpocard">
+               <!-- <video autoplay loop muted playsinline src="./assets/videos/glissade.mp4"></video> -->
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Girar, impulsionando mais giros com as pernas</p>
+        </div>
+    </div>
+</div>
 
-                   <div class="card">
-                    <div class="titulocard"></div>
-                    <div class="corpocard">
-                    </div>
-                    </div>
+<div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Tour en l'air</div>
+            <div class="corpocard">
+               <!-- <video autoplay loop muted playsinline src="./assets/videos/glissade.mp4"></video> -->
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Giro no ar</p>
+        </div>
+    </div>
+</div>
 
-                   <div class="card">
-                    <div class="titulocard"></div>
-                    <div class="corpocard">
-                    </div>
-                    </div>
+                 <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Entrechat</div>
+            <div class="corpocard">
+               <!-- <video autoplay loop muted playsinline src="./assets/videos/glissade.mp4"></video> -->
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Salto, com as pernas cruzando várias vezes antes antes de pousar</p>
+        </div>
+    </div>
+</div>
 
-                   <div class="card">
-                    <div class="titulocard"></div>
-                    <div class="corpocard">
-                    </div>
-                    </div>
+               <div class="card">
+    <div class="card-inner">
+        <div class="card-frente">
+            <div class="titulocard">Cabriole</div>
+            <div class="corpocard">
+               <!-- <video autoplay loop muted playsinline src="./assets/videos/glissade.mp4"></video> -->
+            </div>
+        </div>
+        <div class="card-verso">
+            <p>Salto, com uma perna batento contra a outra no ar</p>
+        </div>
+    </div>
+</div>
 
                 </div>
 
@@ -308,5 +421,10 @@
         window.location.href = "index.html"
 
     }
-
+f
 </script>
+<script>document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("virado");
+    });
+});</script>
