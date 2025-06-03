@@ -1,0 +1,69 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+*{
+margin: 0;
+padding: 0;
+}
+.corpo{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.topo{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    display: flex;
+}
+.corpo2{
+    width: 100%;
+    height: 80%;
+    background-color: red;
+}
+.titulo{
+width: 80%;
+height: 100%;
+background-color: rgb(255, 255, 255);
+justify-content: center;
+align-items: center;
+display: flex;
+font-size: 46px;
+color: black;
+font-weight: bold;
+}
+
+
+.voltar{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 20%;
+height: 100%;
+background-color: rgb(0, 0, 0);
+}
+.btn-voltar {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ffffff, #ffc9c9); 
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-voltar:hover {
+  background: linear-gradient(to right, #db2777, #dc2626);
+  transform: scale(1.05); 
+}
+
+.btn-voltar:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

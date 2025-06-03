@@ -24,11 +24,17 @@
 
     <div class="direita">
       <div class="container_kpi">
-        <div class="kpiUm">KPI 1</div>
-        <div class="kpiDois">KPI 2</div>
-        <div class="kpiTres">KPI 3</div>
+        
+        <div class="kpiUm" id="kpiUm">
+          <div class="titulokpium"></div>
+          <div class="corpokpium"></div>
+        </div>
+
+        <div class="kpiDois" id="kpiDois"></div>
+        <div class="kpiTres" id="kpiTres"></div>
       </div>
 
+      
       <div class="container_graficos">
         <div class="grafico_linha">
           <div class="graficoUm">
@@ -52,6 +58,7 @@
 var idUsuario = sessionStorage.getItem("ID_USUARIO");
   
   buscarDadosG1(idUsuario)
+  buscarDadosG2(idUsuario)
 // function buscarDadosG1(idUsuario){
 // fetch(`/dashboard/verGrafico1/${idUsuario}`, {
 //     method: "GET"
@@ -67,6 +74,9 @@ var idUsuario = sessionStorage.getItem("ID_USUARIO");
 // }).catch(function(erro){
 //     console.log("Erro ao obter dados")
 // })
-// }
+// }[
+document.getElementById('kpiUm').innerText = localStorage.getItem("sabia") || 0;
+document.getElementById('kpiDois').innerText = localStorage.getItem("naoSabia") || 0;
+
 
   </script>

@@ -2,7 +2,7 @@
 var database = require("../database/config")
 
 function verGrafico1(idUsuario) {
-console.log(idUsuario)
+    console.log(idUsuario)
 
 
     var instrucaoSql = `SELECT DATE(a.dataResposta) AS Data, q.nome AS Quiz, SUM(a.pontuacaoUsuario) AS totalAcertos
@@ -18,21 +18,24 @@ ORDER BY DATE(a.dataResposta) DESC;
     return database.executar(instrucaoSql);
 }
 //  ranking usuario com maior pontuação
+// esse vai pro id canva 3
 function verGrafico2(idUsuario) {
     var instrucaoSql = `SELECT u.nome, SUM(a.pontuacaoUsuario) AS totalPontos
 FROM usuario u
 JOIN acertos a ON u.idUsuario = a.fkUsuario
 GROUP BY u.nome
-ORDER BY total_pontos DESC
+ORDER BY totalPontos DESC
 LIMIT 7
     `;
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
 // comparar a dificuldade dos quizzes
+// radar
 function verGrafico3(idUsuario) {
 
-    var instrucaoSql = `SELECT q.nome AS Quiz, AVG(a.pontuacaoUsuario) AS media_acertos
+    var instrucaoSql = `SELECT q.nome AS Quiz, 
+AVG(a.pontuacaoUsuario) AS mediaAcertos
 FROM quiz q
 JOIN acertos a ON q.idQuiz = a.fkQuiz
 GROUP BY q.nome
@@ -44,7 +47,7 @@ LIMIT 7
 }
 
 module.exports = {
-   verGrafico1,
-   verGrafico2,
-   verGrafico3
+    verGrafico1,
+    verGrafico2,
+    verGrafico3
 };

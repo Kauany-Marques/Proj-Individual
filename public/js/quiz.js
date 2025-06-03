@@ -120,7 +120,7 @@ function showResult() {
 
     const mensagemFinal = `Você acertou ${respostasCorretas} perguntas e errou ${5 - respostasCorretas}.`;
     resultElement.textContent = mensagemFinal;
-
+    var porcentagem = ((respostasCorretas / 5) * 100)
 
     localStorage.setItem('pontuacaoFinal', JSON.stringify({corretas: respostasCorretas, erradas: 5 - respostasCorretas}));
 

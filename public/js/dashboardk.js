@@ -1,15 +1,4 @@
-// function buscarDadosG1(){
-// fetch(`/dashboard/verGrafico1/${idUsuario}`)
-//   .then(res => {
-//     if (!res.ok) throw new Error("Erro ao buscar dados do gráfico 1");
-//     return res.json();
-//   })
-//   .then(dados => {
-//     if (!dados.length) {
-//       alert("Não há dados para exibir no gráfico.");
-//       return;
-//     })}
-
+// Gráfico G1 - fetch + chart.js
 function buscarDadosG1(idUsuario){
 fetch(`/dashboard/verGrafico1/${idUsuario}`, {
     method: "GET"
@@ -55,40 +44,147 @@ data: {
 }
 const ctx = document.getElementById("canva1").getContext("2d")
 // atualiza o gráfico com f5
-if(window.chart){
-window.chart.destroy()
-}
+
 window.chart = new Chart(ctx, config)
 }
 
   
 
-//     const labels  = dados.map(r => `${r.data} - ${r.quiz}`);
-//     const valores = dados.map(r => r.totalAcertos);
+// Gráfico 2
 
-//     const ctx = document.getElementById('grafico1').getContext('2d');
-//     new Chart(ctx, {
-//       type: 'bar',
-//       data: {
-//         labels,
-//         datasets: [{
-//           label: 'Total de acertos',
-//           data: valores,
-//           backgroundColor: 'rgba(54, 162, 235, 0.6)',
-//           borderColor:   'rgba(54, 162, 235, 1)',
-//           borderWidth: 1
-//         }]
-//       },
-//       options: {
-//         responsive: true,
-//         maintainAspectRatio: false,  
-//         scales: {
-//           y: { beginAtZero: true }
-//         }
-//       }
-//     });
-//   })
-//   .catch(err => {
-//     console.error(err);
-//     alert("Erro ao carregar gráfico 1.");
-//   });
+function buscarDadosG2(idUsuario){
+fetch(`/dashboard/verGrafico2/${idUsuario}`, {
+    method: "GET"
+    
+}) .then(function(response){if(response.ok){
+    response.json().then(function(resultado){
+    console.log(`O dado recebido foi ${JSON.stringify(resultado)}`);
+    plotarGraficoDois(resultado);
+    })
+}
+else{
+console.log("Nenhum dado foi encontrado. Deu erro")
+}
+}).catch(function(erro){
+    console.log("Erro ao obter dados")
+
+})
+}
+
+function plotarGraficoDois(resultado){
+var labels = []
+var acertos = []
+for(var i = 0; i < resultado.length; i++){
+labels.push(resultado[i].nome)
+acertos.push(Number(resultado[i].totalPontos))
+}
+
+const config2 = {
+type: "bar",
+data: {
+    labels: labels,
+    datasets: [{
+    label: labels[0],
+    data: acertos,
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    borderWidth: 2,
+    tension: 0.3
+    },
+    {
+    label: labels[1],
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    },
+    {
+    label: labels[2],
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    },
+    {
+    label: labels[3],
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    }
+]
+
+}, options: {responsive:false}
+
+}
+const ctx2 = document.getElementById("canva2").getContext("2d")
+// atualiza o gráfico com f5
+
+window.chart = new Chart(ctx2, config2)
+}
+
+
+// Gráfico 3
+function buscarDadosG3(idUsuario){
+fetch(`/dashboard/verGrafico3/${idUsuario}`, {
+    method: "GET"
+    
+}) .then(function(response){if(response.ok){
+    response.json().then(function(resultado){
+    console.log(`O dado recebido foi ${JSON.stringify(resultado)}`);
+    plotarGraficoDois(resultado);
+    })
+}
+else{
+console.log("Nenhum dado foi encontrado. Deu erro")
+}
+}).catch(function(erro){
+    console.log("Erro ao obter dados")
+
+})
+}
+
+
+function plotarGraficoDois(resultado){
+var labels = []
+var acertos = []
+for(var i = 0; i < resultado.length; i++){
+labels.push(resultado[i].nome)
+acertos.push(Number(resultado[i].totalPontos))
+}
+
+const config2 = {
+type: "bar",
+data: {
+    labels: labels,
+    datasets: [{
+    label: labels[0],
+    data: acertos,
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    borderWidth: 2,
+    tension: 0.3
+    },
+    {
+    label: labels[1],
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    },
+    {
+    label: labels[2],
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    },
+    {
+    label: labels[3],
+    borderColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    backgroundColor: ['rgba(75, 192, 213, 1)', 'green', 'red', '#dcdcdc'],
+    }
+]
+
+}, options: {responsive:false}
+
+}
+const ctx2 = document.getElementById("canva2").getContext("2d")
+// atualiza o gráfico com f5
+
+window.chart = new Chart(ctx2, config2)
+}
+
+
+
+// KPI 1 - PORCENTAGEM DE ACERTOS

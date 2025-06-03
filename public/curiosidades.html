@@ -294,13 +294,20 @@
         }
     }
     function resultado(tipo) {
+        let sabia = parseInt(localStorage.getItem("sabia") || 0);
+        let naoSabia = parseInt(localStorage.getItem("naoSabia") || 0)
+
         if (tipo == "sim") {
+           
             sabia++;
         } else {
             naoSabia++
         }
-        document.getElementById('contadorSabia').innerText = sabia
-        document.getElementById('contadorNaoSabia').innerText = naoSabia
+localStorage.setItem("sabia", sabia);
+localStorage.setItem("naoSabia", naoSabia)
+
+        // document.getElementById('contadorSabia').innerText = sabia
+        // document.getElementById('contadorNaoSabia').innerText = naoSabia
 
         posicaoAtual++;
 

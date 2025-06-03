@@ -7,23 +7,27 @@
 
  body {
      height: 2vh;
-     background-color: #202020;
+     background-color: #000000;
  }
 
  .corpo {
      display: flex;
      overflow: hidden;
-     background-color: rgba(129, 10, 129, 0);
+     background-color: rgba(0, 0, 0, 0);
  }
 
  .cabeca {
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #202020;
+     background-color: #ffffff;
      left: 1000px;
+     color: #000000;
+     font-size: 35px;
  }
-
+.cabeca h1{
+    color: #000000;
+}
  .eu {
      display: flex;
      flex-wrap: wrap;
@@ -31,9 +35,12 @@
      margin-top: 7vh;
      width: 96.5vw;
      height: 75vh;
-     background-color: #202020;
+     background-color: #000000;
      border-radius: 100px;
 
+ }
+ h1{
+    color: rgb(255, 255, 255);
  }
 
  .esquerda {
@@ -44,7 +51,7 @@
  }
 
  .esquerda h2 {
-     color: #FF0077;
+     color: #ffffff;
      font-size: 30px;
      margin-bottom: 20px;
      margin-left: 10px;
@@ -60,7 +67,7 @@
  .direita {
      width: 30%;
      height: 100%;
-     background-color: #202020;
+     background-color: #000000;
      border-radius: 12px;
      display: flex;
      margin-left: 100px;
@@ -85,88 +92,18 @@
      font-size: 20px;
  }
 
- nav.menuLateral {
-     width: 70px;
-     height: 100%;
-     background-color: #202020;
-     padding: 40px 0 40px 1%;
-     box-shadow: 3px 0 0 #FF0077;
-     position: fixed;
-     top: 0;
-     left: 0;
-     overflow: hidden;
-     transition: .5s;
-
- }
-
- nav.menuLateral.expandir {
-     width: 300px;
- }
-
- .botExpandir {
-     width: 100%;
-     padding: 10%;
- }
-
- .botExpandir>i {
-     color: white;
-     font-size: 24px;
-     cursor: pointer;
- }
-
- ul {
-     height: 100%;
-     list-style-type: none;
- }
-
- ul li.item-menu:hover {
-     background-color: #FF0077;
-
- }
-
- ul li.item-menu {
-     transition: .3s;
- }
-
- ul li.ativo {
-     background-color: #FF0077;
- }
-
- ul li.item-menu a {
-     color: white;
-     text-decoration: none;
-     font-size: 23px;
-     padding: 20px 4%;
-     display: flex;
-     margin-bottom: 20px;
-     line-height: 40px;
- }
-
- ul li.item-menu a .txt-link {
-     margin-left: 55px;
-
- }
-
- nav.menuLateral.expadir .txt-link {
-     margin-left: 70px;
-     transition: .5s;
- }
-
- ul li.item-menu a .icon>i {
-     font-size: 30px;
-     margin-left: 10px;
- }
-
+ 
  h1 {
      padding: 12px;
      display: flex;
      align-items: center;
      justify-content: center;
      left: 102px;
-     color: #FF0077;
-     margin-top: 15px;
+     color: #ffffff;
+     margin-top: 20px;
+     font-size: 35px;
 
- }
+    }
 
  .inicioTimeline p {
      margin-left: 100px;
@@ -204,7 +141,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #202020;
+     background-color: #000000;
      margin-bottom: 20px;
      margin-left: 300px;
  }
@@ -223,25 +160,25 @@
      overflow: hidden;
      text-align: justify;
  }
-
+ 
  .esquerda2 img {
      width: 100%;
      height: 100%;
      object-fit: contain;
  }
-
+ 
  .direita2 {
      text-align: justify;
      padding: 7px;
      width: 50%;
      height: 100%;
-     background-color: #202020;
- }
+     background-color: #ffffff;
+    }
 
 .caixagrandona {
     width: 90vw;
     height: 80vh;
-    background-color: #202020;
+    background-color: #000000;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,18 +195,19 @@
     text-align: justify;
      width: 50%;
      height: 400px;
-     background-color: #202020;
+     background-color: #000000;
      color: white;
      padding: 20px;
+     gap: 8px;
      border-radius: 20px;
      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
  }
 
 
  .textoDoLado h2 {
-     color: #FF0077;
+     color: #ffffff;
      margin-bottom: 10px;
- }
+    }
 
  .textoDoLado p {
     color: #988b8b;
@@ -306,7 +244,7 @@
      0% {
          transform: translateX(0);
      }
-
+     
      25% {
          transform: translateX(0);
      }
@@ -339,7 +277,7 @@
  .footer {
      display: flex;
      /* width: 100vw; */
-     background-color: #FF0077;
+     background-color: #000000;
      height: 100px;
   margin-bottom: 80px;
 
@@ -349,7 +287,7 @@
      display: flex;
      font-size: 20px;
      margin-left: 600px;
-     color: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
  }
 
  .iconesOBG {
@@ -368,3 +306,77 @@
     height: 200px;
 
 }
+
+
+         nav.menuLateral {
+             width: 70px;
+             height: 100%;
+             background-color: #000000;
+             padding: 40px 0 40px 1%;
+             box-shadow: 3px 0 0 #ffffff;
+             position: fixed;
+             top: 0;
+             left: 0;
+             overflow: hidden;
+             transition: .5s;
+         
+         }
+         
+         nav.menuLateral.expandir {
+             width: 300px;
+         }
+         
+         .botExpandir {
+             width: 100%;
+             padding: 10%;
+         }
+         
+         .botExpandir>i {
+             color: white;
+             font-size: 24px;
+             cursor: pointer;
+         }
+         
+         ul {
+             height: 100%;
+             list-style-type: none;
+         }
+         
+         ul li.item-menu:hover {
+             background-color: #542b55;
+             color: #000000;
+         
+         }
+         
+         ul li.item-menu {
+             transition: .3s;
+         }
+         
+         ul li.ativo {
+             background-color: #542b55;
+         }
+         
+         ul li.item-menu a {
+             color: rgb(0, 0, 0);
+             text-decoration: none;
+             font-size: 23px;
+             padding: 20px 4%;
+             display: flex;
+             margin-bottom: 20px;
+             line-height: 40px;
+         }
+         
+         ul li.item-menu a .txt-link {
+             margin-left: 55px;
+         
+         }
+         
+         nav.menuLateral.expadir .txt-link {
+             margin-left: 70px;
+             transition: .5s;
+         }
+         
+         ul li.item-menu a .icon>i {
+             font-size: 30px;
+             margin-left: 10px;
+         }
