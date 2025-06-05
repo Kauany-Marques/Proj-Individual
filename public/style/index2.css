@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white; /* Cor do scroll */
+    background: white; 
     border-radius: 5px;
 }
 
@@ -38,7 +38,7 @@
     flex-direction: row;
 }
 .titulos{
-      position: absolute;
+position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -103,7 +103,7 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-background-color: wheat;
+background-color: pink;
 color: black;
 
 }
@@ -111,7 +111,7 @@ ul li.item-menu{
     transition: .3s;
 }
 ul li.ativo{
-    background-color: rgb(148, 103, 103);
+    background-color: pink;
 }
 
 ul li.item-menu a{
@@ -429,7 +429,7 @@ background-color: #a9a9a9;
 .titulodificuldades{
     width: 100%;
     height: 15%;
-    color: palegoldenrod;
+    color: pink;
     padding: 5px;
     display: flex;
     background-color: #000;

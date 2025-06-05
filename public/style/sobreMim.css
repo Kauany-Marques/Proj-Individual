@@ -380,3 +380,10 @@
              font-size: 30px;
              margin-left: 10px;
          }
+ul li.item-menu:hover a {
+    color: #ffffff;
+}
+
+ul li.item-menu:hover a .icon > i {
+    color: #ffffff;
+}

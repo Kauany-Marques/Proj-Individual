@@ -231,6 +231,13 @@ button {
     background-color: #f0f0f0;
     color: #000;
 }
+ul li.item-menu:hover a {
+    color: #ffffff;
+}
+
+ul li.item-menu:hover a .icon > i {
+    color: #ffffff;
+}
 #options button {
   background-color: #333;
   color: white;

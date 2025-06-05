@@ -60,7 +60,7 @@ function mostrarBailarina(){
 bailarinaElement.style.display = "block"
 }
 
-function showQuestion() {
+function mostrarQuestao() {
     const question = questions[currentQuestion];
     questionElement.textContent = question.question;
     optionsElement.innerHTML = '';
@@ -104,7 +104,7 @@ function selectOption(option, correctAnswer) {
         if (currentQuestion < questions.length) {
              esconderBailarina();
               dicaElement.style.display = "none"
-            showQuestion();
+            mostrarQuestao();
         } else {
             showResult();
         }
@@ -120,7 +120,6 @@ function showResult() {
 
     const mensagemFinal = `Você acertou ${respostasCorretas} perguntas e errou ${5 - respostasCorretas}.`;
     resultElement.textContent = mensagemFinal;
-    var porcentagem = ((respostasCorretas / 5) * 100)
 
     localStorage.setItem('pontuacaoFinal', JSON.stringify({corretas: respostasCorretas, erradas: 5 - respostasCorretas}));
 
@@ -158,4 +157,4 @@ function showResult() {
 
 
 
-showQuestion();
+mostrarQuestao();

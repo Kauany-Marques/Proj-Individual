@@ -351,3 +351,10 @@ button.errada {
     height: 150vh;
     display: flex;
 }
+ul li.item-menu:hover a {
+    color: #ffffff;
+}
+
+ul li.item-menu:hover a .icon > i {
+    color: #ffffff;
+}

@@ -8,7 +8,7 @@
 .corpo {
     width: 100vw;
     height: 100vh;
-    background-color: #202020;
+    background-color: #000000;
 }
 
 body {
@@ -22,9 +22,9 @@ body {
 nav.menuLateral {
     width: 70px;
     height: 100%;
-    background-color: #202020;
+    background-color: #000000;
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #FF0077;
+    box-shadow: 3px 0 0 pink;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@ nav.menuLateral.expandir {
 }
 
 .botExpandir>i {
-    color: white;
+    color: pink;
     font-size: 24px;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ ul {
 }
 
 ul li.item-menu:hover {
-    background-color: #FF0077;
+    background-color: pink;
 
 }
 
@@ -63,7 +63,7 @@ ul li.item-menu {
 }
 
 ul li.ativo {
-    background-color: #FF0077;
+    background-color: pink;
 }
 
 ul li.item-menu a {
@@ -128,29 +128,35 @@ h1 {
     display: flex;
     width: 100vw;
     height: 30vh;
-    background-color: #202020;
+    background-color: #000000;
     color: white;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 35px;
     
 }
 
 .quizes {
     width: 80vw;
     height: 40vh;
-    background-color: #202020;
+    background-color: #ffffff;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
 }
+ul li.item-menu:hover a {
+    color: #ffffff;
+}
 
+ul li.item-menu:hover a .icon > i {
+    color: #ffffff;
+}
 
 .partebaixo {
     width: 100vw;
     height: 70vh;
     display: flex;
-      background: linear-gradient(to bottom, #202020 0%, #111 100%);
+    background-color: #ffffff;
   color: #e0e0e0;
     justify-content: center;
     align-items: center;
@@ -160,21 +166,21 @@ h1 {
 .quiz1 {
     width: 25vw;
     height: 40vh;
-    background-color: #202020;
+    background-color: #000000;
     flex-direction: column;
     align-items: center;
     display: flex;
-
       color: #e0e0e0;
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  
 }
 .topoq1{
 display: flex;
 width: 100%;
 height: 20%;
-background-color: #3a3a3a;;
+background-color: black;;
 justify-content: center;
 align-items: center;
 
@@ -212,13 +218,12 @@ margin-top: 40px;
     color: #e0e0e0;
   padding: 10px;
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .topoq2{
 display: flex;
 width: 100%;
 height: 20%;
-background-color: #3a3a3a;;
+background-color: black;
 justify-content: center;
 align-items: center;
 
@@ -256,13 +261,12 @@ margin-top: 40px;
     color: #e0e0e0;
   padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .topoq3{
 display: flex;
 width: 100%;
 height: 20%;
-background-color: #3a3a3a;
+background-color: #000;
 justify-content: center;
 align-items: center;
 
@@ -298,7 +302,6 @@ margin-top: 40px;
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .dificuldade{
     display: flex;

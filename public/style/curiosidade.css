@@ -25,9 +25,10 @@ body {
  nav.menuLateral {
      width: 70px;
      height: 100%;
-     background-color:#202020;
+     background-color:#ffffff;
      padding: 40px 0 40px 1%;
-     box-shadow: 3px 0 0 #FF0077;
+     box-shadow: 3px 0 0 #000000;
+     color: #000000;
      position: fixed;
      top: 0;
      left: 0;
@@ -43,7 +44,7 @@ width: 300px;
    padding: 10%; 
 }
 .botExpandir > i{
-color: white;
+color: rgb(0, 0, 0);
 font-size: 24px;
 cursor: pointer;
 }
@@ -52,18 +53,19 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-background-color: #FF0077;
+background-color: #000000;
+color: #ffffff;
 
 }
 ul li.item-menu{
     transition: .3s;
 }
 ul li.ativo{
-    background-color: #FF0077;
+    background-color: #9e7979;
 }
 
 ul li.item-menu a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 23px;
     padding: 20px 4%;
@@ -78,6 +80,14 @@ ul li.item-menu a .txt-link{
 nav.menuLateral.expadir .txt-link{
 margin-left: 70px;
 transition: .5s;
+}
+
+ul li.item-menu:hover a {
+    color: #ffffff;
+}
+
+ul li.item-menu:hover a .icon > i {
+    color: #ffffff;
 }
 
 ul li.item-menu a .icon > i{
@@ -121,7 +131,7 @@ ul li.item-menu a .icon > i{
 }
 
 .navLogo p {
-    color: #FF0077;
+    color: #000000;
     font-size: 25px;
     font-weight: 600;
     margin-left: 20px;

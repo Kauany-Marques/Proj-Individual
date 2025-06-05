@@ -46,7 +46,7 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   overflow-x: hidden; 
 }
 
@@ -54,34 +54,36 @@ body {
 .container_kpi {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .kpiUm,.kpiDois,.kpiTres {
   background-color: white;
   flex: 1;
-  height: 100px;
+  height: 140px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(181, 11, 11, 0.1);
   justify-content: center;
   align-items: center;
   display: flex;
+  color: red;
+
 }
 .titulokpium{
   width: 100%;
-  height: 50px;
+  height: 50%;
   background-color: #000000;
 }
 .container_graficos {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 
 .grafico_linha {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .graficoUm, .graficoDois {
@@ -98,18 +100,20 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 46%;
+  width: 80%;
+  height: 200px;
+  margin-left: 7vw;
 }
 
 
 .graficoUm canvas,.graficoDois canvas {
   width: 100% !important;
-  height: 230px !important;
+  height: 200px !important;
 }
 
 .graficoTres canvas {
-  width: 90% !important;
-  height: 170px !important;
+  width: 100% !important;
+  height: 200px !important;
 }
 
 
@@ -125,7 +129,8 @@ body {
   .graficoUm,
   .graficoDois,
   .graficoTres {
-    max-width: 100%;
+    max-width: 100%
+    ;
       transition: transform 0.3s ease; 
   }
 .graficoUm:hover,
