@@ -14,16 +14,26 @@
 
 
 <body>
-    <div class="blocao">
         <div class="topo">
-            <div class="textotopo">
+            <div class="esq">
+                <div class="txt">
+                <div class="titulotxt">
+                    <h2>Curiosidades</h2>
+                </div>
+                <div class="corpotxt">
+                    <p>Bem-vindo às curiosidades. Registre seu conhecimento
+                nos campos "Já sabia" e "Não sabia", para incrementar o contador e receber um título. </p>
+                </div>
+                </div>
+            <!-- <div class="textotopo">
                 <h1>Curiosidades sobre o ballet</h1>
-                  <p>Bem-vindo às curiosidades. Aqui, encontrará informações que poucos conhecem. Registre seu conhecimento
-                nos campos "Já sabia" e "Não sabia", para incrementar ou decrementar o contador e receber um título. </p>
+                  
+            </div> -->
             </div>
+            <div class="dir">
            <div class="cont">
 
-             <div class="contador">
+           
                 <div class="titulocontador"><h3>Contador</h3></div>
                     
                 <div class="sabianao">
@@ -34,6 +44,7 @@
                 </div>
            </div>
 
+        </div>
         </div>
         <!-- <div class="blocoA"> -->
            
@@ -278,6 +289,11 @@
 
 </html>
 <script>
+window.onload = function() {
+    localStorage.removeItem("sabia");
+    localStorage.removeItem("naoSabia");
+};
+
     var sabia = 0;
     var naoSabia = 0;
     var posicaoAtual = 0;
@@ -306,8 +322,8 @@
 localStorage.setItem("sabia", sabia);
 localStorage.setItem("naoSabia", naoSabia)
 
-        // document.getElementById('contadorSabia').innerText = sabia
-        // document.getElementById('contadorNaoSabia').innerText = naoSabia
+       document.getElementById('contadorSabia').innerText = sabia
+     document.getElementById('contadorNaoSabia').innerText = naoSabia
 
         posicaoAtual++;
 

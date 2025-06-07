@@ -307,83 +307,79 @@
 
 }
 
+.icones{
+    color: rgb(255, 255, 255);;
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 20px;
+}
 
-         nav.menuLateral {
-             width: 70px;
-             height: 100%;
-             background-color: #000000;
-             padding: 40px 0 40px 1%;
-             box-shadow: 3px 0 0 #ffffff;
-             position: fixed;
-             top: 0;
-             left: 0;
-             overflow: hidden;
-             transition: .5s;
-         
-         }
-         
-         nav.menuLateral.expandir {
-             width: 300px;
-         }
-         
-         .botExpandir {
-             width: 100%;
-             padding: 10%;
-         }
-         
-         .botExpandir>i {
-             color: white;
-             font-size: 24px;
-             cursor: pointer;
-         }
-         
-         ul {
-             height: 100%;
-             list-style-type: none;
-         }
-         
-         ul li.item-menu:hover {
-             background-color: #542b55;
-             color: #000000;
-         
-         }
-         
-         ul li.item-menu {
-             transition: .3s;
-         }
-         
-         ul li.ativo {
-             background-color: #542b55;
-         }
-         
-         ul li.item-menu a {
-             color: rgb(0, 0, 0);
-             text-decoration: none;
-             font-size: 23px;
-             padding: 20px 4%;
-             display: flex;
-             margin-bottom: 20px;
-             line-height: 40px;
-         }
-         
-         ul li.item-menu a .txt-link {
-             margin-left: 55px;
-         
-         }
-         
-         nav.menuLateral.expadir .txt-link {
-             margin-left: 70px;
-             transition: .5s;
-         }
-         
-         ul li.item-menu a .icon>i {
-             font-size: 30px;
-             margin-left: 10px;
-         }
-ul li.item-menu:hover a {
-    color: #ffffff;
+ nav.menuLateral {
+     width: 70px;
+     height: 100%;
+     background-color:#000000;
+     padding: 40px 0 40px 1%;
+     box-shadow: 3px 0 0 #ba9292;
+     position: fixed;
+     top: 0;
+     left: 0;
+     overflow: hidden;
+     transition: .5s;
+
+ }
+ nav.menuLateral.expandir{
+width: 300px;
+ }
+.botExpandir{
+   width: 100%;
+   padding: 10%; 
+}
+.botExpandir > i{
+color:pink;
+font-size: 24px;
+cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu:hover{
+background-color: #ffffff;
+
+}
+ul li.item-menu{
+    transition: .3s;
+}
+ul li.ativo{
+    background-color: #b9a1ac;
+}
+
+ul li.item-menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 55px;
+    
+}
+nav.menuLateral.expadir .txt-link{
+margin-left: 70px;
+transition: .5s;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+  ul li.item-menu:hover a {
+    color: #000000;
 }
 
 ul li.item-menu:hover a .icon > i {
-    color: #ffffff;
+    color: #000000;
 }

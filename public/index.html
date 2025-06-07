@@ -77,22 +77,22 @@
         </div>
     </div>
 
-    <div class="corpo4">
-        <div class="tituloc4">
-            <h3>SINCRONIA</h3>
-
-        </div>
-        <div class="corpoc4">
-            <div class="videoc4">
-                <video autoplay muted loop playsinline
-                    src="./assets/videos/ciseszinhas1080p ‐ Feito com o Clipchamp.mp4"></video>
-
-            </div>
-        </div>
+ <div class="corpo4">
+    <div class="tituloc4">
+        <h3>GERADOR DE COREOGRAFIAS ALEATÓRIAS</h3>
+       
     </div>
+    <div class="corpoc4">
+         <p>Aperte o botão e se desafie</p>
+        <button onclick="gerarCoreografia()" class="gerar">Gerar Coreografia</button>
+        <div id="resultadoCoreografia" class="resultado"></div> 
+        <div id="mensagemDificuldade" class="mensagem"></div>
+    </div>
+</div>
+
     <div class="corpo5" id="corpoc5">
         <div class="topoc5">
-            Um dos principais princípios do ballet. Você consegue acompanhar o ritmo?
+            Não conhece algum passo? Descubra mais abaixo!
         </div>
         <div class="corpoc5">
 
@@ -495,7 +495,6 @@
 
         </ul>
 
-
 </body>
 <!-- Cada card possui uma div frente, e uma div trás. Na div frente, tem a estilização da imagem ou gir, e do título.
  Para virar o card, fiz um script com querySelectorAll (seleciona todos os elementos com a classe que passei de parametro)
@@ -521,3 +520,39 @@
         });
     });
     </script>
+<script>
+function gerarCoreografia() {
+    const movimentos = [
+        "Plié", "Tendu", "Relevé", "Degagé", "Passé",
+        "Ron de Jambe", "Fondu", "Balancé", "Pirouette", "Glissadé",
+        "Grand Jeté", "Fouetté", "Tour en l'air", "Entrechat", "Cabriole"
+    ];
+
+    const movimentosDificeis = ["Grand Jeté", "Fouetté", "Tour en l'air", "Entrechat", "Cabriole"];
+
+    let coreografia = "";
+    let contadorDificeis = 0;
+
+    for (let i = 1; i <= 6; i++) {
+        const movimentoAleatorio = movimentos[Math.floor(Math.random() * movimentos.length)];
+        coreografia += `${i}. ${movimentoAleatorio} <br>`;
+
+         if (movimentosDificeis.includes(movimentoAleatorio)) {
+             contadorDificeis++;
+         }
+    }
+
+    document.getElementById("resultadoCoreografia").innerHTML = coreografia;
+
+     let dificuldade = "";
+     if (contadorDificeis >= 3) {
+         dificuldade = "Coreografia difícil!";
+     } else if (contadorDificeis >= 1) {
+         dificuldade = "Coreografia média!";
+     } else {
+         dificuldade = "Coreografia fácil!";
+     }
+
+     document.getElementById("mensagemDificuldade").innerHTML = dificuldade;
+}
+ </script>
