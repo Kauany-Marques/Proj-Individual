@@ -137,7 +137,9 @@ function showResult() {
                    
                     console.log("Cadastro feito")
 
-                    window.location = "quiz.html";
+                    setTimeout(() => {
+                             window.location = "quiz.html";   
+                             }, 4000); 
                 } else {
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }

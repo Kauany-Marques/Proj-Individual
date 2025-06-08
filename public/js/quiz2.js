@@ -4,28 +4,42 @@ const questions = [
         question: "Em qual período surgiu o ballet?",
         options: ["Renascentista", "Romantismo", "Trovadorismo", "Humanismo", "Realismo", "Modernismo"],
         correctAnswer: "Renascentista",
-        dica: 'ABC'
+        dica: 'Marcou o início da Renascença cultural na Europa',
+        gif: './assets/images/BailarinaGif.gif'
+
     
     },
     { 
         question: "Onde surgiu o ballet?",
         options: ["Brasil", "Estados Unidos", "Itália", "França", "China", "Alemanha"],
-        correctAnswer: "Itália"
+        correctAnswer: "Itália",
+        dica: 'País europeu famoso pela arte, cultura e renascimento',
+        gif: './assets/images/BailarinaGif.gif'
+
     },
     { 
         question: "Quem fundou a primeira escola de ballet?",
         options: ["Albert Einstein", "Luis XIV", "Lucas XIV", "Leonardo XIV", "Luciano Huck", "Lorenzo XIV"],
-        correctAnswer: "Luis XIV"
+        correctAnswer: "Luis XIV",
+        dica: 'Rei francês conhecido por seu amor à dança e apoio às artes',
+        gif: './assets/images/BailarinaGif.gif'
+
     },
     { 
         question: "Qual o nome da academia de ballet mais antiga do mundo?",
         options: ["Theatro Municipal", "Kirov Academy of Ballet", "Bolshoi Ballet Academy", "Royal Ballet School", "Smart Fit", "Académie Royale de Musique"],
-        correctAnswer: "Académie Royale de Musique"
+        correctAnswer: "Académie Royale de Musique",
+        dica: 'Seu nome é em francês',
+        gif: './assets/images/BailarinaGif.gif'
+
     },
     { 
         question: "Qual técnica revolucionou o ballet romântico?",
         options: ["Música Eletrônica", "Chinelo", "Ensaiar", "Sapatilha de Ponta", "Figurinos", "Botas"],
-        correctAnswer: "Sapatilha de Ponta"
+        correctAnswer: "Sapatilha de Ponta",
+        dica: 'Tipo especial de calçado que permite aos bailarinos ficarem na ponta dos pés.',
+        gif: './assets/images/BailarinaGif.gif'
+
     }
 ];
 
@@ -136,7 +150,9 @@ function showResult() {
                    
                     console.log("Cadastro feito")
 
-                    window.location = "quiz.html";
+                      setTimeout(() => {
+                             window.location = "quiz.html";   
+                             }, 4000); 
                 } else {
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }

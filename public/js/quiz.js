@@ -18,20 +18,25 @@ const questions = [
         question: "Qual destas é uma famosa obra do ballet?",
         options: ["Velozes e Furiosos", "Titanic", "Lago dos Cisnes", "Frozen", "OS 7 Monstrinhos", "Procurando Nemo"],
         correctAnswer: "Lago dos Cisnes",
-        dica: 'Não sou um filme'
+        dica: 'Não sou um filme',
+        gif: './assets/images/BailarinaGif.gif'
         
     },
     { 
         question: "O que é necessário para se equilibrar no ballet?",
         options: ["Força na Orelha", "Força no Dedão", "Controle na Respiração", "Ter um cachorro", "Sonhar", "Força no pescoço"],
         correctAnswer: "Força no Dedão",
-        dica:  'O que equilíbrio lembra?'
+        dica:  'O que equilíbrio lembra?',
+        gif: './assets/images/BailarinaGif.gif'
+        
     },
     { 
         question: "Qual dessas opções é uma característica de quem faz ballet?",
         options: ["Equilíbrio", "Dormir muito", "Correr rápido", "Cozinhar bem", "Falar alto", "Ser ansioso"],
         correctAnswer: "Equilíbrio",
-        dica: 'Pnse na delicdeza da dança'
+        dica: 'Pnse na delicdeza da dança',
+        gif: './assets/images/BailarinaGif.gif'
+
     }
 ];
 
@@ -142,8 +147,17 @@ function showResult() {
                 if (resposta.ok) {
                    
                     console.log("Cadastro feito")
+                   
 
-                    window.location = "quiz.html";
+                     setTimeout(() => {
+                             window.location = "quiz.html";   
+                             }, 4000); 
+
+
+
+
+                  
+
                 } else {
                     throw "Houve um erro ao tentar realizar o cadastro!";
                 }

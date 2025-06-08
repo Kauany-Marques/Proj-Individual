@@ -36,7 +36,7 @@ function verGrafico2(idUsuario) {
 function media_acertos_quiz1(idUsuario) {
 
     var instrucaoSql = `
-    SELECT u.idUsuario, u.nome, q.nome, SUM(a.pontuacaoUsuario) AS pontuacaoTotal1
+    SELECT COUNT(u.idUsuario) AS totalVezesTentou, u.nome, q.nome, SUM(a.pontuacaoUsuario) AS pontuacaoTotal1
         FROM acertos a JOIN usuario u on a.fkUsuario = u.idUsuario
         JOIN quiz q ON a.fkQuiz = q.idQuiz 
         where idUsuario = ${idUsuario} and idQuiz = 1
@@ -49,7 +49,7 @@ function media_acertos_quiz1(idUsuario) {
 function media_acertos_quiz2(idUsuario) {
 
     var instrucaoSql = `
-    SELECT u.idUsuario, u.nome, q.nome, SUM(a.pontuacaoUsuario) AS pontuacaoTotal2
+    SELECT COUNT(u.idUsuario) AS totalVezesTentou, u.nome, q.nome, SUM(a.pontuacaoUsuario) AS pontuacaoTotal2
         FROM acertos a JOIN usuario u on a.fkUsuario = u.idUsuario
         JOIN quiz q ON a.fkQuiz = q.idQuiz 
         where idUsuario = ${idUsuario} and idQuiz = 2
@@ -62,7 +62,7 @@ function media_acertos_quiz2(idUsuario) {
 function media_acertos_quiz3(idUsuario) {
 
     var instrucaoSql = `
-    SELECT u.idUsuario, u.nome, q.nome, SUM(a.pontuacaoUsuario) AS pontuacaoTotal3
+    SELECT COUNT(u.idUsuario) as totalVezesTentou, u.nome, q.nome, SUM(a.pontuacaoUsuario) AS pontuacaoTotal3
         FROM acertos a JOIN usuario u on a.fkUsuario = u.idUsuario
         JOIN quiz q ON a.fkQuiz = q.idQuiz 
         where idUsuario = ${idUsuario} and idQuiz = 3
@@ -72,9 +72,20 @@ function media_acertos_quiz3(idUsuario) {
     return database.executar(instrucaoSql);
 }
 
+function verGrafico3(idUsuario) {
+
+    var instrucaoSql = `
+   SELECT COUNT(fkUsuario) AS totalVezesTentou, SUM(pontuacaoUsuario) AS totalPontos
+    FROM acertos WHERE fkUsuario = ${idUsuario};
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     verGrafico1,
     verGrafico2,
+    verGrafico3,
     media_acertos_quiz1,
     media_acertos_quiz2,
     media_acertos_quiz3,

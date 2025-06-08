@@ -1,153 +1,113 @@
-
-body {
+body, html {
   margin: 0;
   padding: 0;
-  background-color: #000000;
-  box-sizing: borderrgb(0, 0, 0)
+  background-color: #f0f0e8;
+  overflow: hidden;
+  height: 100vh;
 }
-
 
 .fundo {
   display: flex;
-  min-height: 100vh;
-  position: fixed;
-  width: 100vw;
+  height: 100vh;
 }
 
 .esquerda {
-  width: 200px;
-  background-color: #fff;
-  color: white;
+  width: 250px;
+  background-color: #f3efe7;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .oi {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 30px;
-  margin-bottom: 40px;
-  height: 40px;
-  background-color: red;}
+  background-color: #ff5c5c;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 .botaoQuiz {
-    float: inline-end;
   background-color: #f4a261;
   color: white;
+  font-size: 1rem;
   border: none;
-  padding: 10px;
   border-radius: 8px;
+  padding: 10px 20px;
   cursor: pointer;
-  width: 100%;
 }
 
 .direita {
   flex: 1;
-  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  overflow-x: hidden; 
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 20px;
+  background-color: #333;
 }
-
 
 .container_kpi {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.kpiUm,.kpiDois,.kpiTres {
-  background-color: white;
-  flex: 1;
-  height: 140px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(181, 11, 11, 0.1);
   justify-content: center;
-  align-items: center;
-  display: flex;
-  color: red;
+  gap: 40px;
+  margin-bottom: 40px;
+}
 
-}
-.titulokpium{
-  width: 100%;
-  height: 50%;
-  background-color: #000000;
-}
-.container_graficos {
+.kpiUm, .kpiDois, .kpiTres {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 300px;
+  height: 140px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.kpiUm h3, .kpiDois h3, .kpiTres h3 {
+  font-size: 1.3rem;
+}
+
+.valor-kpi {
+  font-size: 3rem;
+  color: red;
+}
+
+.container_graficos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
 }
 
 .grafico_linha {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
-.graficoUm, .graficoDois {
-  flex: 1;
-  max-width: 48%;
-  background-color: white;
+.graficoUm, .graficoDois, .graficoTres {
+  background-color: #ffffff !important;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 33%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.graficoTres {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  height: 200px;
-  margin-left: 7vw;
-}
-
-
-.graficoUm canvas,.graficoDois canvas {
-  width: 100% !important;
-  height: 200px !important;
-}
-
-.graficoTres canvas {
-  width: 100% !important;
-  height: 200px !important;
-}
-
-
-@media (max-width: 1024px) {
-  .container_kpi {
-    flex-direction: column;
-  }
-
-  .grafico_linha {
-    flex-direction: column;
-  }
-
-  .graficoUm,
-  .graficoDois,
-  .graficoTres {
-    max-width: 100%
-    ;
-      transition: transform 0.3s ease; 
-  }
-.graficoUm:hover,
-.graficoDois:hover,
-.graficoTres:hover {
-  transform: translateY(-10px);
-}
-  .graficoUm canvas,
-  .graficoDois canvas {
-    height: 200px !important;
-  }
-
-  .graficoTres canvas {
-    height: 300px !important;
-  }
-}
-canvas{
-    min-width: 100% !important;
-    min-height: 100%!important;
+canvas {
+  background-color: transparent !important;
 }

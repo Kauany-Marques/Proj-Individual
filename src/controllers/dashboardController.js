@@ -47,6 +47,27 @@ function verGrafico2(req, res) {
     });
 }
 
+// Gráfico 3
+function verGrafico3(req, res) {
+    // const limite_linhas = 7;
+
+    var idUsuario = req.params.idUsuario;
+
+    // console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
+
+    dashboardModel.verGrafico3(idUsuario).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 
 // KPI 1
 function media_acertos_quiz1(req, res) {
@@ -115,6 +136,7 @@ function media_acertos_quiz3(req, res) {
 module.exports = {
     verGrafico1,
     verGrafico2,
+    verGrafico3,
     media_acertos_quiz1,
     media_acertos_quiz2,
     media_acertos_quiz3

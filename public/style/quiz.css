@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 .icones{
-    color: rgb(255, 255, 255);;
+    color:#f1efe9;;
     margin-top: 30px;
     margin-left: 5px;
     font-size: 20px;
@@ -40,7 +40,7 @@ body {
 
  }
  .icones{
-    color: rgb(255, 255, 255);;
+    color:#f1efe9;;
     margin-top: 30px;
     margin-left: 5px;
     font-size: 20px;
@@ -76,7 +76,7 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-background-color: #ffffff;
+background-color: #f1efe9;
 
 }
 ul li.item-menu{
@@ -87,7 +87,7 @@ ul li.ativo{
 }
 
 ul li.item-menu a{
-    color: rgb(255, 255, 255);
+    color:#f1efe9;
     text-decoration: none;
     font-size: 23px;
     padding: 20px 4%;
@@ -123,7 +123,7 @@ ul li.item-menu:hover a .icon > i {
 }
 
 .container1 {
-    background-color: aliceblue;
+    background-color: #f1efe9;
     width: 100%;
     max-width: 800px;
 
@@ -144,7 +144,7 @@ ul li.item-menu:hover a .icon > i {
     width: 100vw;
     height: 30vh;
     background-color: #000000;
-    color: white;
+    color: #f1efe9;
     justify-content: center;
     align-items: center;
     font-size: 35px;
@@ -154,24 +154,24 @@ ul li.item-menu:hover a .icon > i {
 .quizes {
     width: 85%;
     height: 40vh;
-    background-color: #ffffff;
+    background-color: #f1efe9;
     flex-direction: row;
     display: flex;
     justify-content: space-around;
 }
 ul li.item-menu:hover a {
-    color: #ffffff;
+    color: #f1efe9;
 }
 
 ul li.item-menu:hover a .icon > i {
-    color: #ffffff;
+    color: #f1efe9;
 }
 
 .partebaixo {
     width: 100vw;
     height: 70vh;
     display: flex;
-    background-color: #ffffff;
+    background-color: #f1efe9;
   color: #e0e0e0;
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@ margin-top: 40px;
     margin-bottom: 60px;
 } */
 .quiz1 p{
-    color: white;
+    color: #f1efe9;
     font-size: 32px;
 }
 .quiz2 {
@@ -262,7 +262,7 @@ margin-top: 40px;
     margin-bottom: 60px;
 } */
 .quiz2 p{
-    color: white;
+    color: #f1efe9;
     font-size: 32px;
 }
 .quiz3 {
@@ -305,14 +305,14 @@ margin-top: 40px;
     margin-bottom: 60px;
 } */
 .quiz3 p{
-    color: white;
+    color: #f1efe9;
     font-size: 32px;
 }
 .botaoQuiz {
     display: inline-block;
   padding: 10px 20px;
   background-color: 	#3a3a3a;
-  color: white;
+  color: #f1efe9;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;

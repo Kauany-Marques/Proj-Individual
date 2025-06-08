@@ -29,18 +29,25 @@
 
     <div class="direita">
 
-      <div class="container_kpi">
+     <div class="container_kpi">
+  <!-- KPI 1 -->
+  <div class="kpiUm">
+    <h3>Porcentagem de acertos Quiz 1</h3>
+    <div id="kpiUm" class="valor-kpi"></div>
+  </div>
 
-        <!-- KPI 1 -->
-        <div class="kpiUm" id="kpiUm"></div>
+  <!-- KPI 2 -->
+  <div class="kpiDois">
+    <h3>Porcentagem de acertos Quiz 2</h3>
+    <div id="kpiDois" class="valor-kpi"></div>
+  </div>
 
-        <!-- KPI 2 -->
-        <div class="kpiDois" id="kpiDois"></div>
-
-        <!-- KPI 3 -->
-        <div class="kpiTres" id="kpiTres"></div>
-
-      </div>
+  <!-- KPI 3 -->
+  <div class="kpiTres">
+    <h3>Porcentagem de acertos Quiz 3</h3>
+    <div id="kpiTres" class="valor-kpi"></div>
+  </div>
+</div>
 
 
       <div class="container_graficos">
@@ -54,6 +61,9 @@
           </div>
         </div>
 
+        <div class="graficoTres">
+          <canvas id="canva3"></canvas>
+        </div>
 
       </div>
     </div>
@@ -63,9 +73,9 @@
   <script>
     var idUsuario = sessionStorage.getItem("ID_USUARIO");
 
-    buscarDadosG1(idUsuario)
-    buscarDadosG2(idUsuario)
-
+    buscarDadosG1(idUsuario);
+    buscarDadosG2(idUsuario);
+    buscarDadosG3(idUsuario);
     media_acertos_quiz1(idUsuario);
     media_acertos_quiz2(idUsuario);
     media_acertos_quiz3(idUsuario);

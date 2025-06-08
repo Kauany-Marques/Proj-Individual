@@ -58,7 +58,7 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-background-color: #ffffff;
+background-color: #f1efe9;
 
 }
 ul li.item-menu{
@@ -200,7 +200,7 @@ ul li.item-menu:hover a .icon > i {
 .link:hover {
     transform: scale(1.2);
     font-size: 18px;
-    color: wheat !important;
+    color: #f1efe9 !important;
 }
 .blocao{
     /* display: flex; */
@@ -233,7 +233,7 @@ flex-direction: row;
    background-color: #202020;
     margin-left: 100px;
     text-align: justify;
-    color: aliceblue;
+    color: #f1efe9;
 }
 .textotopo p{
     margin-top: 2px;
@@ -316,7 +316,7 @@ h1{
     flex: 1;
     font-size: 25px;
     background: #111;
-    color: white;
+    color: #f1efe9;
     padding: 20px;
     text-align: justify;
     display: flex;
@@ -334,7 +334,7 @@ justify-content: center;
     border-radius: 12px;
     border: none;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #f1efe9;
     color: #000000;
     font-weight: bold;
     transition: transform 0.2s ease, background 0.3s;
@@ -358,7 +358,7 @@ background-color: green;
     font-size: 26px;
 }
 .blocoB{
-    background-color: rgb(215, 215, 215);
+    background-color: #f1efe9;
     display: flex;
       width: 100vw;
     height: 550px;
@@ -382,7 +382,7 @@ background-color: green;
 .cont {
     margin: 40px auto;
     width: 300px;
-    background-color: #ffffff;
+    background-color: #f1efe9;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -393,7 +393,7 @@ background-color: green;
 }
 .titulocontador h3 {
     background: linear-gradient(to right, pink, #ff7aa0);
-    color: white;
+    color: #f1efe9;
     font-size: 26px;
     padding: 15px;
     text-align: center;
@@ -411,7 +411,7 @@ background-color: green;
 
 .sabianao {
     padding: 20px 10px;
-    background-color: #fafafa;
+    background-color: #f1efe9;
     display: flex;
     flex-direction: column;
     gap: 5px; 
@@ -467,7 +467,7 @@ h2{
     width: 100%;
     height: 80%;
     background-color: #000000;
-    color: white;
+    color: #f1efe9;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,200 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.fundo{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 6, 6);
+    display: flex;
+    flex-direction: column;
+}
+.topo{
+    width: 100%;
+    height: 20%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo-img {
+  width: 33%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 17vh;
+}
+.topo h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+.corpo{
+    margin-top: 5vh;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voltar {
+    position: absolute;
+    top: 60px;
+    right: 10px; 
+}
+
+.voltar a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgb(255, 252, 252);
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: transform 0.3s ease,
+}
+.voltar:hover{
+      transform: translateY(-5px);
+}
+.cards{
+    width: 95%;
+    height: 90%;
+background-color: aqua;
+display: flex;
+flex-direction: column;
+}
+.topocd{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 0, 0);
+}
+.topocd h3{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+h3{
+    color: #f1efe9;
+    margin-bottom: 90px;
+
+}
+.corpocd{
+    width: 100%;
+    height: 90%;
+    background-color: black ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    width: 17%;
+    height: 90%;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-frente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    color: #f1efe9;
+}
+.card-tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    color: #f1efe9;
+}
+/* 
+.card-frente {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px;
+} */
+
+.card-frente h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; 
+  line-height: 50px; 
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  z-index: 2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-frente,.card-tras {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-frente img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.card-tras {
+    background-color: #f1efe9;
+    color: black;
+
+    transform: rotateY(180deg);
+}
+.fundo2{
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.fundo,
+.fundo2 {
+  width: 100vw;
+  min-height: 90vh;
+  background-color: #f1efe9;
+  display: flex;
+  flex-direction: column;
+}

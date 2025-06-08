@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white; 
+    background: #f1efe9; 
     border-radius: 5px;
 }
 
@@ -67,7 +67,7 @@ position: absolute;
 
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #f1efe9;
  
     background-attachment: fixed;
     /* display: flex;
@@ -75,7 +75,7 @@ body {
 }
 
 .icones{
-    color: rgb(255, 255, 255);;
+    color: #f1efe9;;
     margin-top: 30px;
     margin-left: 5px;
     font-size: 20px;
@@ -102,7 +102,7 @@ width: 300px;
    padding: 10%; 
 }
 .botExpandir > i{
-color:pink;
+color:#ffc0cb;
 font-size: 24px;
 cursor: pointer;
 }
@@ -111,7 +111,7 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-background-color: #ffffff;
+background-color: #f1efe9;
 
 }
 ul li.item-menu{
@@ -122,7 +122,7 @@ ul li.ativo{
 }
 
 ul li.item-menu a{
-    color: rgb(255, 255, 255);
+    color: #f1efe9;
     text-decoration: none;
     font-size: 23px;
     padding: 20px 4%;
@@ -216,7 +216,7 @@ ul li.item-menu:hover a .icon > i {
     
     width: 100%;
     height: 80vh;
-    background-color: rgb(221, 221, 221);
+    background-color: #f1efe9;
 display: flex;}
 .c2esq{
     display: flex;
@@ -224,7 +224,7 @@ display: flex;}
 justify-content: center;
 width: 40%;
 height: 100%;
-background-color: #ffffff;
+background-color: #f1efe9;
 
 }
 .c2esq a{
@@ -243,7 +243,7 @@ background-color: #ffffff;
     display: flex;
 width: 64%;
 height: auto;
-background-color: #ffffff;
+background-color: #f1efe9;
 justify-content: center;
 align-items: center;
 font-size: 33px;
@@ -258,7 +258,7 @@ padding: 20px;
 .corpo3 {
   width: 100%;
   height: 45vh;
-  background-color: #ffffff;
+  background-color: #f1efe9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,7 +305,7 @@ a {
 .corpo4 {
     width: 100%;
     height: 100vh;
-    background-color: #fefefe;
+    background-color: #f1efe9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,7 +317,7 @@ a {
     width: 100%;
     height: auto;
     background-color: #000000;
-    color: #fff;
+    color: #f1efe9;
     margin-top: 10vh;
     text-align: center;
     padding: 20px;
@@ -364,7 +364,7 @@ a {
 
 .resultado {
     font-size: 22px;
-    color: #fff;
+    color: #f1efe9;
     text-align: center;
     margin-top: 20px;
 }
@@ -400,7 +400,7 @@ align-items: center;
 .corpo5{
 width: 100%;
 height: 140vh;
-background-color: #ffffff;
+background-color: #f1efe9;
 display: flex;
 flex-direction: column;
 }
@@ -412,7 +412,7 @@ flex-direction: column;
 .topoc5{
     width: 100%;
     height: 10%;
-    background-color: #ffffff;
+    background-color: #f1efe9;
     justify-content: center;
     display: flex;
     font-size: 30px;
@@ -426,7 +426,7 @@ flex-direction: column;
 }
 
 .corpoc5 h1{
-    color: #fff;
+    color: #f1efe9;
     font-size: 60px;
     font-weight: bold;
     margin-left: 9vw;
@@ -510,7 +510,7 @@ align-items: center;
     height: 90%;
     justify-content: center;
     border-radius: 12px;
-    background-color: #fff;
+    background-color: #ffffff;
     color: black;
     font-weight: bold;
     text-align: center;
@@ -549,7 +549,7 @@ align-items: center;
 
 .card-verso {
     background: black;
-    color: white;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,12 +564,12 @@ transform: scale(1.05);
     width: 100%;
     height: 20%;
     background-color: black;
-    color: white;
+    color: #f1efe9;
 }
 .corpocard{
 width: 100%;
 height: 80%;
-background-color: rgb(255, 255, 255);
+background-color: #ffffff;
 }
 .corpocard img{
     object-fit: contain;
@@ -581,7 +581,7 @@ background-color: rgb(255, 255, 255);
 }
 #botaoSair {
     background-color: #ff007f;
-    color: white;
+    color: #f1efe9;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -599,7 +599,7 @@ background-color: rgb(255, 255, 255);
     right: 20px;
     padding: 10px;
     background-color: #ff007f;
-    color: white;
+    color: #f1efe9;
     font-size: 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -614,14 +614,14 @@ background-color: rgb(255, 255, 255);
 .corpo6{
 width: 100%;
 height: 105vh;
-background-color: #ffff;
+background-color: #f1efe9;
 display: flex;
 flex-direction: column;
 }
 .tituloc6{
     width: 100%;
     height: 20vh;
-    background-color: #ffffff;
+    background-color: #f1efe9;
     margin-top: 5vh;
     display: flex;
     padding-left: 8vw;
@@ -651,7 +651,7 @@ flex-direction:row;
 width:60%;
 height: 100%;
 background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
+color: #f1efe9;
 display: flex;
 justify-content: center;
 gap: 4px;
@@ -676,7 +676,7 @@ flex-direction: column;
 width: 60%;
 height: 100%;
 background-color: black;
-color: #fff;
+color: #f1efe9;
 justify-content: center;
 gap: 4px;
 text-align: justify;
@@ -707,14 +707,14 @@ background-color: yellow;
 .corpo8{
 width: 100%;
 height: 105vh;
-background-color: #ffff;
+background-color: #f1efe9;
 display: flex;
 flex-direction: column;
 }
 .tituloc8{
     width: 100%;
     height: 20vh;
-    background-color: #ffffff;
+    background-color: #f1efe9;
     margin-top: 5vh;
     display: flex;
     padding-left: 8vw;
@@ -744,7 +744,7 @@ flex-direction:row;
 width:60%;
 height: 100%;
 background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
+color: #f1efe9;
 display: flex;
 justify-content: center;
 gap: 4px;
@@ -769,7 +769,7 @@ flex-direction: column;
 width: 60%;
 height: 100%;
 background-color: black;
-color: #fff;
+color: #f1efe9;
 justify-content: center;
 gap: 4px;
 text-align: justify;
@@ -819,7 +819,7 @@ flex-direction:row;
 width:60%;
 height: 100%;
 background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);
+color: #f1efe9;
 display: flex;
 justify-content: center;
 gap: 4px;
@@ -836,7 +836,7 @@ flex-direction: column;
 .corpo11{
 width: 100%;
 height: 20vh;
-background-color: rgb(255, 255, 255);
+background-color: #f1efe9;
 display: flex;
 justify-content: center;
 align-items: center;

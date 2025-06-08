@@ -11,6 +11,9 @@ router.get("/verGrafico2/:idUsuario", function (req, res) {
     dashboardController.verGrafico2(req, res);
 });
 
+router.get("/verGrafico3/:idUsuario", function (req, res) {
+    dashboardController.verGrafico3(req, res);
+});
 
 router.get("/media_acertos_quiz1/:idUsuario", function (req, res) {
     dashboardController.media_acertos_quiz1(req, res);
