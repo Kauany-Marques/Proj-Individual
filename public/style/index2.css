@@ -4,6 +4,8 @@
     margin: 0;
     scroll-behavior: smooth;
     scrollbar-color: black;
+ font-family: 'Playfair Display';
+                                                
     
  }
  ::-webkit-scrollbar {
@@ -58,7 +60,6 @@ position: absolute;
     font-size: 30px;
 }
 * {
-    font-family: 'Helvetica Neue';
     margin: 0;
     padding: 0;
      box-sizing: border-box;

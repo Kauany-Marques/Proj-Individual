@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Woof';
+ font-family: 'Playfair Display';
 
 }
 
@@ -12,6 +12,7 @@
 }
 
 body {
+    font-family: 'Helvetica Neue';
 
     position: fixed;
     display: flex;
