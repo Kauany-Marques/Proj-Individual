@@ -46,10 +46,10 @@ body, html{
 }
 
 .voltar a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    background: rgb(255, 252, 252);
+    background: rgb(0, 0, 0);
     padding: 5px 10px;
     border-radius: 4px;
     transition: transform 0.3s ease,

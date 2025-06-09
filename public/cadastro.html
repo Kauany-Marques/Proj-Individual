@@ -9,6 +9,7 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="10x10" href="assets/images/cisneWheat.png">
 
     <title>Cadastro</title>
 </head>
@@ -29,7 +30,7 @@
                 <div class="mensagemSenha" id="div_senha"></div>
                 <input id="input_redigite" class="inputs" placeholder="Redigite a senha" type="password">
                 <div class="mensagemRedigite" id="div_redigite"></div>
-                <button class="botaoCadastro" onclick="cadastrar()">Cadastro</button>
+                <button class="botaoCadastro" onclick="validar()">Cadastro</button>
                 <h4 class="jae">Já é cadastrado? Clique <a href="login.html">aqui</a> para fazer login</h4>
 
                 <div id="div_mensagem" class="divMensagem"></div>
@@ -42,6 +43,33 @@
 </html>
 <script>
 
+        function validar(){
+        var senha1 = input_senhaCadastro.value
+        var senha2 = input_redigite.value
+        var email = input_emailCadastro.value;
+
+        var senhaFlag = 0
+
+        if(senha1 < 4 ){
+            div_senha.innerHTML = 'Senha muito curta'
+            senhaFlag += 1
+        }
+        if(senha1 != senha2 && (senha1 != "" && senha2 != "")){
+            div_senha.innerHTML = "Senhas não são iguais"
+            senhaFlag += 1
+        }
+        if(!email.includes('@') && !email.includes('.')){
+            div_email.innerHTML = `Email precisa de '@'' e ''.'`
+            senhaFlag += 1
+        }else{
+            div_email.innerHTML = ""
+        }
+        if(senhaFlag == 0){
+            div_email.innerHTML = ""
+            div_senha.innerHTML = ""
+            cadastrar()
+        }
+    }
     // Array para armazenar empresas cadastradas para validação de código de ativação 
     let listaEmpresasCadastradas = [];
 

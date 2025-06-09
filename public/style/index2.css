@@ -234,10 +234,10 @@ background-color: #f1efe9;
 .c2esq h1{
    color: #000000;
    font-weight: bold;
-   font-size: 84px;
+   font-size: 70px;
    margin-top: 45px;
    margin-top: 20vh;
-   margin-left: 5vw;
+   margin-left: 7vw;
 }
 .c2dir{
     display: flex;
@@ -352,14 +352,15 @@ a {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    background-color: #ca5858;
+    background-color: pink;
     border: none;
     border-radius: 5px;
     transition: 0.3s;
 }
 
 .corpoc4 .gerar:hover {
-    background-color: #ffcccc;
+    background-color: #000000;
+    color: white;
 }
 
 .resultado {
@@ -580,8 +581,8 @@ background-color: #ffffff;
   object-fit: contain;
 }
 #botaoSair {
-    background-color: #ff007f;
-    color: #f1efe9;
+    background-color: pink;
+    color: #000000;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -589,8 +590,16 @@ background-color: #ffffff;
     border-radius: 5px;
 }
 
+.ajuste {
+    display: flex;
+    position: absolute;
+    width:100%;
+    top: -140%;
+    left: 95%;
+}
+
 #botaoSair:hover {
-    background-color: #cc005f;
+    background-color: rgb(234, 157, 170);
 }
 
 #botaoLogin {

@@ -27,6 +27,7 @@
                 <h1 class="login">Login</h1>
                 <input id="input_email" class="input" placeholder="E-mail" type="text" />
                 <input id="input_senha" class="input" placeholder="Senha" type="password" />
+                <div id="msgSenha"></div>
                 <button class="botao" onclick="entrar()">Login</button>
                 <h4>Não é cadastrado? Clique <a href="cadastro.html">aqui</a> para se cadastrar</h4>
 
@@ -37,8 +38,6 @@
 
 </html>
 <script>
-
-
     function entrar() {
 
 
@@ -48,10 +47,11 @@
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            msgSenha.innerHTML = 'Preencha todos os campos'
             return false;
         }
         else {
-
+           
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -83,7 +83,7 @@
                 });
 
             } else {
-
+                 msgSenha.innerHTML = 'Senha Ou Usuario Incorreto'
                 console.log("Houve um erro ao tentar realizar o login!");
 
                 resposta.text().then(texto => {

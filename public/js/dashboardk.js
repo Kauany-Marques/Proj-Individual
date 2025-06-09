@@ -20,7 +20,16 @@ function plotarGraficoUm(resultado) {
     var labels = [];
     var acertos = [];
     for (var i = 0; i < resultado.length; i++) {
-        labels.push(resultado[i].Data.split("T")[0]);
+        const dataBruta = resultado[i].Data;
+        const dataObjeto = new Date(dataBruta);
+        console.log(dataObjeto)
+
+        const dataFormatada = dataObjeto.toLocaleString("pt-BR",{
+            day: "2-digit",
+            month: "2-digit",
+        })
+
+        labels.push(dataFormatada);
         acertos.push(Number(resultado[i].totalAcertos));
     }
 
@@ -125,7 +134,7 @@ function plotarGraficoDois(resultado) {
                 label: 'Pontos',
                 data: acertos,
                 backgroundColor: [
-                    '#1abc9c', '#2ecc71', '#e74c3c', '#f1c40f', '#9b59b6', '#34495e'
+                    '#9b59b6', '#9b59b6', '#9b59b6', '#9b59b6', '#9b59b6', '#9b59b6'
                 ],
                 borderRadius: 5,
                 borderSkipped: false
